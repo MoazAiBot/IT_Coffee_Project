@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Special+Gothic+Expanded+One&display=swap');
+
+/*Styling for Whole Site*/
+
+:root {
+    --primary-color: rgb(102, 27, 27);
+    --hover-color: rgb(211, 89, 7);
+}
+
+* {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-image-wrapper {
+    z-index: 0;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(218, 206, 171);
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+img {
+    width: 100%;
+}
+
+.section-content {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 90%;
+}
+
+
+/*Navbar Styling*/
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background-color: var(--primary-color);
+}
+
+header .navbar {
+    display: flex;
+    padding: 10px 0px;
+    justify-content: space-between;
+}
+
+.navbar .nav-logo .logo-text {
+    color: rgb(218, 206, 171);
+    text-shadow: 5px 5px 5px black;
+    font-weight: 800;
+}
+
+.navbar .nav-link {
+    color: rgb(214, 198, 153);
+}
+
+.navbar .nav-menu .user-interface .nav-link {
+    font-size: 20px;
+}
+
+.navbar .nav-menu {
+    display: flex;
+    width: 65%;
+    gap: 10px;
+}
+
+.navbar .nav-menu .nav-link {
+    padding: 10px 18px;
+    font-size: 14px;
+    transition: .3s ease;
+}
+
+.navbar .nav-menu .nav-link:hover {
+    color: var(--primary-color);
+    background-color: var(--hover-color);
+    border-radius: 20px;
+}
+
+.navbar .nav-menu .user-interface .nav-link:hover {
+    background-color: black;
+    border-radius: 20px;
+}
+
+.navbar :where(#menu-close-button,
+#menu-open-button) {
+    display: none;
+}
+
+
+/*Hero STYLING*/
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+}
+
+.hero-section .section-content {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+.hero-section .hero-details .title {
+    font-size: xx-large;
+    display: flex;
+    color: var(--primary-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hero-section .hero-details .subtitle {
+    margin-top: 8px;
+    font-size: xx-large;
+    max-width: 70%;
+    font-weight: 900;
+    color: var(--hover-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-section .hero-image {
+    text-shadow: 2px 2px 2px red;
+    shape-rendering: crispEdges;
+}
+
+.hero-section .hero-details .description {
+    font-size: large;
+    max-width: 70%;
+    color: var(--primary-color);
+    margin: 15px 0px 40px;
+}
+
+.hero-section .hero-details .order-button {
+    display: flex;
+    gap: 23px;
+    width: 18%;
+}
+
+.hero-section .hero-details .button {
+    padding: 10px 26px;
+    background-color: bisque;
+    background-color: var(--primary-color);
+    color: bisque;
+    background-size: cover;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: .3s ease;
+}
+
+.hero-section .hero-details .button:hover {
+    color: var(--primary-color);
+    background-color: var(--hover-color);
+}
+
+
+/*About Section Styling*/
+
+.about-section {
+    padding: 120px 0;
+    background-color: white;
+}
+
+.about-section .section-content {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-section .section-content .about-details h2 {
+    color: var(--primary-color);
+    border-bottom: 4px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+
+/*To make a space between border & text */
+
+.about-section .section-content .about-details h2::after {
+    content: "";
+    width: 80px;
+    height: 5px;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 10px;
+    background: scroll;
+}
+
+.about-section .about-image-wrapper .about-image {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+}
+
+.about-section .section-content .about-details {
+    display: flex;
+    gap: 30px;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-section .section-content .about-details .about-text {
+    line-height: 35px;
+    margin: 10px 0 15px 0;
+    text-align: center;
+}
+
+.about-section .section-content .about-details .social-link-list {
+    font-size: x-large;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.about-section .section-content .about-details .social-link {
+    font-size: x-large;
+    color: var(--primary-color);
+    transition: .3s ease;
+}
+
+.about-section .section-content .about-details .social-link:hover {
+    transform: scale(1.3);
+    color: var(--hover-color);
+}
+
+
+/*Make  it responsive*/
+
+@media screen and (max-width:900px) {
+     :root {
+        --font-size-m: 1rem;
+        --font-size-l: 1.3rem;
+        --font-size-xl: 1.5rem;
+        --font-size-xxl: 1.8rem;
+    }
+    .navbar :where(#menu-close-button,
+    #menu-open-button) {
+        display: block;
+        font-size: x-large;
+    }
+    .navbar #menu-close-button {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+    .navbar #menu-open-button {
+        color: aliceblue;
+    }
+    .navbar .nav-menu {
+        display: block;
+        position: fixed;
+        left: -300px;
+        top: 0;
+        width: 300px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        background: white;
+        transition: left .2s ease;
+    }
+    body .show-mobile-menu .navbar .nav-menu {
+        left: 0px;
+    }
+    .navbar .nav-menu .nav-link {
+        font-size: large;
+        display: block;
+        color: black;
+        margin-top: 17px;
+    }
+    .hero-section {
+        display: flex;
+        width: 100%;
+    }
+    main {
+        width: fit-content;
+        background-size: cover;
+    }
+    .hero-section .section-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 100px 0px;
+        gap: 100px;
+        flex-direction: column-reverse;
+    }
+    .hero-section .hero-image-wrapper {
+        display: flex;
+        max-width: 100%;
+        flex-direction: column-reverse;
+        margin-right: 0;
+    }
+    .hero-section .hero-details {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .about-section .section-content {
+        display: flex;
+        flex-direction: column;
+    }
+}
