@@ -99,11 +99,6 @@ header .navbar {
     border-radius: 20px;
 }
 
-.navbar :where(#menu-close-button,
-#menu-open-button) {
-    display: none;
-}
-
 
 /*Hero STYLING*/
 
