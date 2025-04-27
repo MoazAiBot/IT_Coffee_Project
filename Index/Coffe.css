@@ -3,8 +3,9 @@
 /*Styling for Whole Site*/
 
 :root {
-    --primary-color: rgb(102, 27, 27);
-    --hover-color: rgb(211, 89, 7);
+    --primary-color: rgb(112, 40, 22);
+    --hover-color: rgb(230, 222, 217);
+    --background-colour: rgb(222, 198, 170);
 }
 
 * {
@@ -27,7 +28,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: rgb(218, 206, 171);
+    color: var(--background-colour);
 }
 
 button {
@@ -53,23 +54,35 @@ header {
     position: fixed;
     width: 100%;
     z-index: 5;
-    background-color: var(--primary-color);
+    background-color: linear(40deg, var(--background-colour));
+    backdrop-filter: blur(30px);
 }
 
 header .navbar {
     display: flex;
-    padding: 10px 0px;
     justify-content: space-between;
 }
 
+.navbar .nav-logo {
+    background-color: var(--background-colour);
+    padding: 0 10px 0 10px;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    animation: color-logo 4s infinite;
+    transition: 4s ease;
+}
+
 .navbar .nav-logo .logo-text {
-    color: rgb(218, 206, 171);
-    text-shadow: 5px 5px 5px black;
-    font-weight: 800;
+    color: var(--primary-color);
+    padding: 10px;
+    font-weight: bolder;
+    text-shadow: 5px 5px 10px black;
+    font-weight: 900;
 }
 
 .navbar .nav-link {
-    color: rgb(214, 198, 153);
+    color: var(--background-colour);
+    text-shadow: 10px 10px 10px rgb(0, 0, 0);
 }
 
 .navbar .nav-menu .user-interface .nav-link {
@@ -79,6 +92,7 @@ header .navbar {
 .navbar .nav-menu {
     display: flex;
     width: 65%;
+    padding: 10px;
     gap: 10px;
 }
 
@@ -92,6 +106,7 @@ header .navbar {
     color: var(--primary-color);
     background-color: var(--hover-color);
     border-radius: 20px;
+    scale: 2;
 }
 
 .navbar .nav-menu .user-interface .nav-link:hover {
@@ -103,67 +118,147 @@ header .navbar {
 /*Hero STYLING*/
 
 .hero-section {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    background-color: bisque;
+    min-height: 80vh;
+    background: linear-gradient(90deg, rgb(67, 18, 18), var(--primary-color));
 }
 
 .hero-section .section-content {
     display: flex;
+    justify-content: center;
     align-items: center;
     min-height: 100vh;
-    justify-content: space-between;
+    gap: 0rem;
+    margin-right: 0;
+    margin-left: 200px;
+    padding-right: 0;
+}
+
+.hero-section .bgvideo {
+    scale: 3;
+    width: 100%;
+    border: 5px solid var(--primary-color);
+    border-top-left-radius: 45rem;
+    border-bottom-right-radius: 10rem;
+    border-bottom: 0;
+    margin-top: 300px;
+    overflow: clip;
+}
+
+.hero-section .bgvideo-width {
+    height: 119vh;
+    width: 100%;
+    border: 5px solid var(--primary-color);
+    border-top-left-radius: 90rem;
+    border-bottom: 0;
+    border-right: 0;
+    margin-top: -120px;
+    margin-left: 150px;
+    overflow: clip;
 }
 
 .hero-section .hero-details .title {
-    font-size: xx-large;
     display: flex;
-    color: var(--primary-color);
+    align-items: center;
+    height: 10vh;
+    width: fit-content;
+    font-size: xx-large;
+    color: var(--background-colour);
+    font-weight: bolder;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 10px 10px 20px black;
+    backdrop-filter: blur(20px);
+    text-emphasis-color: salmon;
 }
 
 .hero-section .hero-details .subtitle {
     margin-top: 8px;
     font-size: xx-large;
-    max-width: 70%;
-    font-weight: 900;
-    color: var(--hover-color);
+    width: 100%;
+    font-weight: 700;
+    color: rgb(162, 104, 9);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.hero-section .hero-image {
-    text-shadow: 2px 2px 2px red;
-    shape-rendering: crispEdges;
+    text-shadow: 10px 10px 20px black;
 }
 
 .hero-section .hero-details .description {
     font-size: large;
-    max-width: 70%;
-    color: var(--primary-color);
-    margin: 15px 0px 40px;
+    width: 100%;
+    color: rgb(122, 102, 75);
+    font-weight: bolder;
+    margin: 15px 0px 40px 0;
+    text-shadow: 10px 10px 20px black;
 }
 
 .hero-section .hero-details .order-button {
+    width: fit-content;
+    border-radius: 100rem;
     display: flex;
-    gap: 23px;
-    width: 18%;
+    box-shadow: 10px 10px 20px var(--primary-color);
+}
+
+.hero-section .shaping-background {
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 5rem 2rem;
+    padding: 0 70px 0;
+    margin-left: -60px;
+    width: 50%;
+    min-height: 3vh;
+    border-bottom-right-radius: 5rem 2rem;
 }
 
 .hero-section .hero-details .button {
     padding: 10px 26px;
-    background-color: bisque;
+    background-color: var(--background-colour);
     background-color: var(--primary-color);
-    color: bisque;
+    color: black;
     background-size: cover;
     border-radius: 20px;
-    border: 2px solid transparent;
+    border: 2px solid var(--background-colour);
+    transition: .3s ease;
+    background: transparent;
+    text-shadow: 10px 10px 20px black;
+    backdrop-filter: blur(1px);
+}
+
+.hero-section .hero-details .button {
+    animation: color-button 4s infinite;
+}
+
+@keyframes color-button {
+    0% {
+        background-color: bisque;
+    }
+    50% {
+        background-color: rgb(227, 174, 114);
+    }
+    100% {
+        background-color: bisque;
+    }
+}
+
+@keyframes color-logo {
+    0% {
+        background-color: bisque;
+    }
+    50% {
+        background-color: rgb(227, 174, 114);
+    }
+    100% {
+        background-color: bisque;
+    }
+}
+
+.hero-section .hero-details .order-button:hover {
+    color: var(--primary-color);
+    background-color: var(--hover-color);
+    backdrop-filter: blur(1px);
     transition: .3s ease;
 }
 
-.hero-section .hero-details .button:hover {
-    color: var(--primary-color);
-    background-color: var(--hover-color);
+.order-button:hover {
+    background-color: brown;
+    scale: 1.1;
 }
 
 
@@ -242,6 +337,8 @@ header .navbar {
 
 /*Make  it responsive*/
 
+
+/*
 @media screen and (max-width:900px) {
      :root {
         --font-size-m: 1rem;
