@@ -6,34 +6,42 @@
     font-style: normal;
 }
 
-.container{
-    padding-left: 15px;
-    padding-right: 15px;
+.container {
+    min-height: 100vh;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
 }
 
-body{
-    margin:0;
+.header-ready {
+    display: flex;
+    width: fit-content;
+    text-align: center;
+    justify-content: center;
 }
 
-html{
+body {
+    margin: 0;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
+
 /*End Global Rules*/
+
 
 /*Start Top nav Bar*/
 
 .nav {
     background-color: #661B1B;
     overflow: hidden;
-    top:0;
+    top: 0;
     left: 0;
-    padding-top:0;
-    position:fixed;
-    margin:0;
+    padding-top: 0;
+    position: fixed;
+    margin: 0;
     height: 100px;
     z-index: 999;
     width: 100%;
@@ -49,21 +57,23 @@ html{
     font-size: 17px;
     font-family: "Open sans";
     font-weight: 700;
-    transform: translate(-30px,20px);
+    transform: translate(-30px, 20px);
     text-indent: 25px;
-
-
 }
+
 .nav img {
     width: 200px;
     height: 158px;
-    transform: translate(10px,-30px);
+    transform: translate(10px, -30px);
 }
+
+
 /*End Top nav Bar*/
+
 
 /*Start left nav bar*/
 
-.left-nav{
+.left-nav {
     position: fixed;
     background-color: #c9b67f;
     width: 260px;
@@ -73,25 +83,25 @@ html{
     z-index: 10000000000;
 }
 
-.left-nav .header{
+.left-nav .header {
     background-color: #3b0f0f;
     height: 70px;
 }
 
-.left-nav .header h2{
+.left-nav .header h2 {
     position: relative;
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    color:#c9b67f;
+    color: #c9b67f;
     font-size: 50px;
     margin-top: 0;
     margin-bottom: 0;
-    top:5px;
+    top: 5px;
 }
 
-.left-nav span{
+.left-nav span {
     position: relative;
     display: block;
     width: 200px;
@@ -108,79 +118,80 @@ html{
     width: 10px;
     height: 10px;
     background-color: black;
-    transform: rotate(45deg); 
+    transform: rotate(45deg);
     top: 50%;
 }
 
 .left-nav span::before {
     left: -10px;
-    top: -4px; 
+    top: -4px;
 }
 
 .left-nav span::after {
-    right: -10px; 
-    top:-4px;
+    right: -10px;
+    top: -4px;
 }
 
-.left-nav .gat ul{
+.left-nav .gat ul {
     padding: 0;
 }
 
-.left-nav .gat ul li{
+.left-nav .gat ul li {
     list-style: none;
-    margin-bottom: 150px;
+    margin-bottom: 76px;
 }
 
-.left-nav .gat ul li a{
+.left-nav .gat ul li a {
     text-decoration: none;
     color: black;
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
-    font-weight:900;
+    font-weight: 900;
     font-style: normal;
     font-size: 35px;
 }
 
-.left-nav .gat ul li a:hover{
-    color:rgb(161, 72, 72);
+.left-nav .gat ul li a:hover {
+    color: rgb(161, 72, 72);
 }
 
-.left-nav .gat ul li:first-child{
+.left-nav .gat ul li:first-child {
     margin-top: 60px;
 }
 
-.gat ul{
+.gat ul {
     position: relative;
-    top:30px
+    top: 4px
 }
+
 
 /*End left nav bar/
 
 /Start Ready to go*/
 
-.ready-to-go{
+.ready-to-go {
     position: relative;
     background-color: #ebdeb9;
     margin-left: 216px;
 }
 
-
-.ready-to-go .header-ready{
+.ready-to-go .header-ready {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 }
 
-.ready-to-go .header-ready i{
+.ready-to-go .header-ready i {
     margin: 0;
     position: relative;
     color: #661b1b;
     font-size: 40px;
     top: -10px;
-    left: 600px;
+    left: 700px;
 }
 
-.ready-to-go .container .header-ready h1{
+.ready-to-go .container .header-ready h1 {
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -188,10 +199,10 @@ html{
     font-size: 70px;
     margin-top: 0;
     position: relative;
-    left: 30px;
+    left: 450px;
 }
 
-.ready-to-go span{
+.ready-to-go span {
     position: relative;
     display: block;
     width: 500px;
@@ -199,46 +210,49 @@ html{
     background-color: black;
     margin-top: -20px;
     margin-bottom: 50px;
-    left: 620px;
+    left: 400px;
 }
 
-.ready-to-go .first-row{
+.ready-to-go .first-row {
     display: flex;
     justify-content: center;
     text-align: center;
     font-size: 20px;
 }
 
-.ready-to-go .first-row img{
+.ready-to-go .first-row img {
     width: 300px;
 }
 
-.first-row .first-item{
-    padding-right:137px ;
+.first-row .first-item {
+    padding-right: 137px;
     border-right: black solid 3px;
     border-bottom: black solid 3px;
+    position: relative;
 }
 
-.first-row .first-item img{
+.first-row .first-item img {
     position: relative;
     right: -70px;
-    top:20px;
+    top: 20px;
     width: 220px;
 }
 
-.first-row .first-item a{
+.first-row .first-item a {
     position: relative;
     right: -62px;
-    top:20px;
+    top: 20px;
 }
 
-.first-row .second-item{
+.first-row .second-item {
     height: 320px;
     border-right: black solid 3px;
     border-bottom: black solid 3px;
+    position: relative;
+    right: 6px;
 }
 
-.first-row .second-item img{
+.first-row .second-item img {
     position: relative;
     margin-left: 127px;
     width: 98px;
@@ -247,130 +261,136 @@ html{
     bottom: 25px;
 }
 
-.first-row .second-item a{
+.first-row .second-item a {
     position: relative;
-    bottom:30px;
+    bottom: 30px;
 }
 
-.first-row .third-item{
+.first-row .third-item {
     height: 220px;
     padding: 70px;
+    position: relative;
+    right: 6px;
     border-bottom: black solid 3px;
 }
 
-.first-row .third-item a{
+.first-row .third-item a {
     position: relative;
     bottom: 63px;
 }
 
-.first-row .third-item img{
+.first-row .third-item img {
     position: relative;
     width: 120px;
     bottom: 60px;
 }
 
-.ready-to-go .second-row{
+.ready-to-go .second-row {
     display: flex;
     justify-content: center;
     text-align: center;
     font-size: 20px;
 }
 
-.ready-to-go .second-row img{
+.ready-to-go .second-row img {
     width: 300px;
 }
 
-.second-row .first-item{
+.second-row .first-item {
     padding-right: 133px;
     border-right: black solid 3px;
     border-bottom: black solid 3px;
 }
 
-.second-row .first-item img{
+.second-row .first-item img {
     position: relative;
     width: 196px;
     right: -37px;
 }
 
-.second-row .first-item a{
+.second-row .first-item a {
     position: relative;
     right: -39px;
 }
 
-.second-row .second-item{
+.second-row .second-item {
     padding-right: 68px;
     border-right: black solid 3px;
     border-bottom: black solid 3px;
     padding-left: 78px;
 }
 
-.second-row .second-item img{
+.second-row .second-item img {
     position: relative;
     top: 40px;
     width: 160px;
     right: -12px;
 }
 
-.second-row .second-item a{
+.second-row .second-item a {
     position: relative;
     top: 30px;
     right: -1px;
 }
 
-.second-row .third-item{
+.second-row .third-item {
     padding-left: 136px;
     border-bottom: black solid 3px;
 }
 
-.second-row .third-item img{
+.second-row .third-item img {
     position: relative;
     right: 52px;
     width: 144px;
     top: -15px;
 }
 
-.second-row .third-item a{
+.second-row .third-item a {
     position: relative;
     right: 45px;
     top: -28px;
 }
 
-.ready-to-go .third-row{
+.ready-to-go .third-row {
     display: flex;
     justify-content: center;
     text-align: center;
     font-size: 20px;
 }
 
-.ready-to-go .third-row img{
+.ready-to-go .third-row img {
     width: 300px;
 }
 
-.third-row .first-item{
+.third-row .first-item {
     padding-right: 161px;
+    position: relative;
+    left: 2px;
     border-right: black solid 3px;
 }
 
-.third-row .first-item img{
+.third-row .first-item img {
     position: relative;
     right: -72px;
     width: 130px;
     top: 14px;
 }
 
-.third-row .first-item a{
+.third-row .first-item a {
     top: 14px;
     position: relative;
     right: -64px;
 }
 
-.third-row .second-item{
+.third-row .second-item {
     padding-left: 56px;
     padding-right: 49px;
+    position: relative;
+    right: 2px;
     border-right: black solid 3px;
 }
 
-.third-row .second-item img{
+.third-row .second-item img {
     position: relative;
     width: 160px;
     right: 5px;
@@ -384,69 +404,71 @@ html{
 
 .first-item,
 .second-item,
-.third-item{
+.third-item {
     padding: 20px;
 }
 
-.ready-to-go p{
+.ready-to-go p {
     margin-top: 0;
 }
 
-.ready-to-go h3{
+.ready-to-go h3 {
     margin-bottom: 0;
 }
 
-.ready-to-go a{
+.ready-to-go a {
     text-decoration: none;
     color: black;
 }
 
-.ready-to-go a:hover{
+.ready-to-go a:hover {
     text-decoration: underline;
 }
 
-.third-row .third-item{
+.third-row .third-item {
     padding-right: 120px;
     padding-left: 91px;
 }
 
-.third-row .third-item img{
+.third-row .third-item img {
     position: relative;
     right: -14px;
     width: 130px;
 }
 
-.third-row .third-item a{
+.third-row .third-item a {
     position: relative;
     right: -8px;
     top: -7px;
 }
 
-.ready-to-go a{
+.ready-to-go a {
     letter-spacing: 2px;
 }
 
+
 /*End Ready to go*/
+
 
 /*Start Backery (Hazem Code)*/
 
-.backery{
+.backery {
     position: relative;
     background-color: #ebdeb9;
     margin-left: 216px;
 }
 
-.backery .container{
+.backery .container {
     margin-top: 0;
 }
 
-.backery .header-backery{
+.backery .header-backery {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.backery .container .header-backery h1{
+.backery .container .header-backery h1 {
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -457,7 +479,7 @@ html{
     left: 30px;
 }
 
-.backery span{
+.backery span {
     position: relative;
     display: block;
     width: 500px;
@@ -465,50 +487,50 @@ html{
     background-color: black;
     margin-top: -20px;
     margin-bottom: 50px;
-    left: 650px;
+    left: 435px;
 }
 
-.backery .first-row{
+.backery .first-row {
     display: flex;
     justify-content: center;
     text-align: center;
     font-size: 20px;
 }
 
-.backery .first-row img{
+.backery .first-row img {
     width: 300px;
 }
 
-.backery .first-row .first-item{
-    padding-right:100px ;
+.backery .first-row .first-item {
+    padding-right: 100px;
     border-right: black solid 3px;
     border-bottom: black solid 3px;
     position: relative;
-    left: 20px;
+    left: 20.5px;
 }
 
-.backery .first-row .first-item img{
+.backery .first-row .first-item img {
     position: relative;
     right: -40px;
-    top:50px;
+    top: 50px;
     width: 220px;
 }
 
-.backery .first-row .first-item a{
+.backery .first-row .first-item a {
     position: relative;
     right: -35px;
-    top:40px;
+    top: 40px;
 }
 
-.backery .first-row .second-item{
+.backery .first-row .second-item {
     height: 320px;
     border-right: black solid 3px;
     border-bottom: black solid 3px;
     position: relative;
-    right: 32px;
+    right: 33px;
 }
 
-.backery .first-row .second-item img{
+.backery .first-row .second-item img {
     position: relative;
     margin-left: 127px;
     width: 192px;
@@ -518,13 +540,13 @@ html{
     top: 20px;
 }
 
-.backery .first-row .second-item a{
+.backery .first-row .second-item a {
     position: relative;
-    top:10px;
+    top: 10px;
     left: 20px;
 }
 
-.backery .first-row .third-item{
+.backery .first-row .third-item {
     height: 220px;
     padding: 70px;
     border-bottom: black solid 3px;
@@ -532,31 +554,31 @@ html{
     right: 33px;
 }
 
-.backery .first-row .third-item a{
+.backery .first-row .third-item a {
     position: relative;
     bottom: 40px;
     left: 8px;
 }
 
-.backery .first-row .third-item img{
+.backery .first-row .third-item img {
     position: relative;
     width: 136px;
     bottom: 38px;
     left: 10px;
 }
 
-.backery .second-row{
+.backery .second-row {
     display: flex;
     justify-content: center;
     text-align: center;
     font-size: 20px;
 }
 
-.backery .second-row img{
+.backery .second-row img {
     width: 300px;
 }
 
-.backery .second-row .first-item{
+.backery .second-row .first-item {
     padding-right: 128px;
     border-right: black solid 3px;
     border-bottom: black solid 3px;
@@ -564,94 +586,93 @@ html{
     left: 48px;
 }
 
-.backery .second-row .first-item img{
+.backery .second-row .first-item img {
     position: relative;
     width: 200px;
     right: -45px;
     top: 1cm;
 }
 
-.backery .second-row .first-item a{
+.backery .second-row .first-item a {
     position: relative;
     right: -45px;
     top: 1cm;
 }
 
-.backery .second-row .second-item{
+.backery .second-row .second-item {
     padding-right: 61px;
     border-right: black solid 3px;
     border-bottom: black solid 3px;
     padding-left: 129px;
     position: relative;
     left: 48px;
-    
 }
 
-.backery .second-row .second-item img{
+.backery .second-row .second-item img {
     position: relative;
     top: 20px;
     right: 35px;
     width: 191px;
 }
 
-.backery .second-row .second-item a{
+.backery .second-row .second-item a {
     position: relative;
     top: 0px;
     right: 40px;
 }
 
-.backery .second-row .third-item{
+.backery .second-row .third-item {
     padding-left: 125px;
     border-bottom: black solid 3px;
     position: relative;
     right: 40px;
 }
 
-.backery .second-row .third-item img{
+.backery .second-row .third-item img {
     position: relative;
     width: 247px;
     top: 34px;
     left: 10px;
 }
 
-.backery .second-row .third-item a{
+.backery .second-row .third-item a {
     position: relative;
     top: 13px;
     left: 2px;
 }
 
-.backery .third-row{
+.backery .third-row {
     display: flex;
     justify-content: center;
     text-align: center;
     font-size: 20px;
 }
 
-.backery .third-row img{
+.backery .third-row img {
     width: 300px;
 }
 
-.backery .third-row .first-item{
+.backery .third-row .first-item {
     padding-right: 122px;
     border-right: black solid 3px;
     position: relative;
     left: 55px;
 }
 
-.backery .third-row .first-item img{
+.backery .third-row .first-item img {
     position: relative;
     width: 220px;
     top: 16px;
     left: 50px;
 }
 
-.backery .third-row .first-item a{
+.backery .third-row .first-item a {
     top: 14px;
     position: relative;
     left: 50px;
 }
 
-.backery .third-row .second-item{
+.backery .third-row .second-item {
     padding-left: 156px;
     padding-right: 70px;
     border-right: black solid 3px;
@@ -659,7 +680,7 @@ html{
     right: 15px;
 }
 
-.backery .third-row .second-item img{
+.backery .third-row .second-item img {
     position: relative;
     top: 6px;
     width: 225px;
@@ -672,61 +693,63 @@ html{
 
 .backery .first-item,
 .backery .second-item,
-.backery .third-item{
+.backery .third-item {
     padding: 20px;
 }
 
-.backery p{
+.backery p {
     margin-top: 0;
 }
 
-.backery h3{
+.backery h3 {
     margin-bottom: 0;
 }
 
-.backery a{
+.backery a {
     text-decoration: none;
     color: black;
 }
 
-.backery a:hover{
+.backery a:hover {
     text-decoration: underline;
 }
 
-.backery .third-row .third-item{
+.backery .third-row .third-item {
     padding-right: 120px;
 }
 
-.backery .third-row .third-item img{
+.backery .third-row .third-item img {
     position: relative;
-    left:30px;
+    left: 30px;
     width: 210px;
     top: 1cm;
 }
 
-.backery .third-row .third-item a{
+.backery .third-row .third-item a {
     position: relative;
     left: 30px;
     top: 45px;
 }
 
+
 /*End Backery (Hazem Code)*/
+
 
 /*Start Packs*/
 
-.packs{
+.packs {
     position: relative;
     background-color: #ebdeb9;
     margin-left: 216px;
 }
 
-.packs .header-packs{
+.packs .header-packs {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.packs .container .header-packs h1{
+.packs .container .header-packs h1 {
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -737,54 +760,57 @@ html{
     left: 30px;
 }
 
-.packs span{
+.packs span {
     position: relative;
     display: block;
     width: 500px;
-    height: 1px;
+    height: 2px;
     background-color: black;
     margin-top: -20px;
     margin-bottom: 50px;
-    left: 640px;
+    left: 430px;
 }
 
-.packs .first-row{
+.packs .first-row {
     display: flex;
     justify-content: center;
     text-align: center;
     font-size: 20px;
 }
 
-.packs .first-row img{
+.packs .first-row img {
     width: 300px;
 }
 
-.packs .first-row .first-item{
-    padding-right:137px ;
+.packs .first-row .first-item {
+    padding-right: 137px;
     border-right: black solid 3px;
     border-bottom: black solid 3px;
+    position: relative;
+    bottom: 10px;
+    left: 3px;
 }
 
-.packs .first-row .first-item img{
+.packs .first-row .first-item img {
     position: relative;
     right: -70px;
-    top:20px;
+    top: 20px;
     width: 165px;
 }
 
-.packs .first-row .first-item a{
+.packs .first-row .first-item a {
     position: relative;
     right: -62px;
-    top:20px;
+    top: 20px;
 }
 
-.packs .first-row .second-item{
+.packs .first-row .second-item {
     height: 320px;
     border-right: black solid 3px;
     border-bottom: black solid 3px;
 }
 
-.packs .first-row .second-item img{
+.packs .first-row .second-item img {
     position: relative;
     margin-left: 127px;
     width: 194px;
@@ -793,130 +819,144 @@ html{
     bottom: 2px;
 }
 
-.packs .first-row .second-item a{
+.packs .first-row .second-item a {
     position: relative;
-    bottom:20px;
+    bottom: 20px;
 }
 
-.packs .first-row .third-item{
+.packs .first-row .third-item {
     height: 220px;
     padding: 70px;
     border-bottom: black solid 3px;
 }
 
-.packs .first-row .third-item a{
+.packs .first-row .third-item a {
     position: relative;
     bottom: 35px;
 }
 
-.packs .first-row .third-item img{
+.packs .first-row .third-item img {
     position: relative;
     width: 155px;
     bottom: 29px;
 }
 
-.packs .second-row{
+.packs .second-row {
     display: flex;
     justify-content: center;
     text-align: center;
     font-size: 20px;
 }
 
-.packs .second-row img{
+.packs .second-row img {
     width: 300px;
 }
 
-.packs .second-row .first-item{
+.packs .second-row .first-item {
     padding-right: 170px;
     border-right: black solid 3px;
     border-bottom: black solid 3px;
+    position: relative;
+    bottom: 10px;
 }
 
-.packs .second-row .first-item img{
+.packs .second-row .first-item img {
     position: relative;
     width: 196px;
     right: -101px;
 }
 
-.packs .second-row .first-item a{
+.packs .second-row .first-item a {
     position: relative;
     right: -89px;
 }
 
-.packs .second-row .second-item{
+.packs .second-row .second-item {
     padding-right: 105px;
     border-right: black solid 3px;
     border-bottom: black solid 3px;
     padding-left: 96px;
+    position: relative;
+    bottom: 10px;
+    right: 9px;
 }
 
-.packs .second-row .second-item img{
+.packs .second-row .second-item img {
     position: relative;
     top: 10px;
     width: 235px;
     right: -4px;
 }
 
-.packs .second-row .second-item a{
+.packs .second-row .second-item a {
     position: relative;
     top: 6px;
     right: -1px;
 }
 
-.packs .second-row .third-item{
+.packs .second-row .third-item {
     padding-left: 96px;
     border-bottom: black solid 3px;
+    position: relative;
+    bottom: 10px;
+    right: 9px;
 }
 
-.packs .second-row .third-item img{
+.packs .second-row .third-item img {
     position: relative;
     right: 52px;
     width: 144px;
     top: 7px;
 }
 
-.packs .second-row .third-item a{
+.packs .second-row .third-item a {
     position: relative;
     right: 45px;
     top: -1px;
 }
 
-.packs .third-row{
+.packs .third-row {
     display: flex;
     justify-content: center;
     text-align: center;
     font-size: 20px;
 }
 
-.packs .third-row img{
+.packs .third-row img {
     width: 300px;
 }
 
-.packs .third-row .first-item{
+.packs .third-row .first-item {
     padding-right: 233px;
     border-right: black solid 3px;
+    position: relative;
+    bottom: 10px;
+    left: 3px;
 }
 
-.packs .third-row .first-item img{
+.packs .third-row .first-item img {
     position: relative;
     right: -140px;
     width: 140px;
     top: 14px;
 }
 
-.packs .third-row .first-item a{
+.packs .third-row .first-item a {
     top: 14px;
     position: relative;
     right: -141px;
 }
 
-.packs .third-row .second-item{
+.packs .third-row .second-item {
     padding-left: 109px;
     padding-right: 164px;
+    position: relative;
+    bottom: 10px;
+    right: 3px;
     border-right: black solid 3px;
 }
 
-.packs .third-row .second-item img{
+.packs .third-row .second-item img {
     position: relative;
     width: 160px;
     right: -25px;
@@ -931,52 +971,54 @@ html{
 
 .packs .first-item,
 .packs .second-item,
-.packs .third-item{
+.packs .third-item {
     padding: 20px;
 }
 
-.packs p{
+.packs p {
     margin-top: 0;
 }
 
-.packs h3{
+.packs h3 {
     margin-bottom: 0;
 }
 
-.packs a{
+.packs a {
     text-decoration: none;
     color: black;
 }
 
-
-.packs .third-row .third-item{
+.packs .third-row .third-item {
     padding-right: 120px;
     padding-left: 29px;
+    position: relative;
+    bottom: 10px;
 }
 
-.packs .third-row .third-item img{
+.packs .third-row .third-item img {
     position: relative;
     right: -26px;
     width: 180px;
     top: 20px;
 }
 
-.packs .third-row .third-item a{
+.packs .third-row .third-item a {
     position: relative;
     right: -22px;
     top: 19px;
 }
 
-.packs a{
+.packs a {
     letter-spacing: 2px;
 }
 
-.packs .container{
+.packs .container {
     margin-top: 0;
 }
 
-.packs a:hover{
+.packs a:hover {
     text-decoration: underline;
 }
+
 
 /*End Packs*/
