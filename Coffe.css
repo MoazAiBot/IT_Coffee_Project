@@ -3,9 +3,9 @@
 /*Styling for Whole Site*/
 
 :root {
-    --primary-color: rgb(112, 40, 22);
+    --primary-color: rgb(83, 29, 16);
     --hover-color: rgb(230, 222, 217);
-    --background-colour: rgb(222, 198, 170);
+    --background-color: rgb(222, 198, 170);
 }
 
 * {
@@ -28,7 +28,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: var(--background-colour);
+    color: rgb(226, 151, 66);
 }
 
 button {
@@ -45,8 +45,8 @@ img {
     margin: 0 auto;
     padding: 0 20px;
     max-width: 90%;
+    height: 10vh;
 }
-
 
 /*Navbar Styling*/
 
@@ -54,8 +54,7 @@ header {
     position: fixed;
     width: 100%;
     z-index: 5;
-    background-color: linear(40deg, var(--background-colour));
-    backdrop-filter: blur(30px);
+    background-color: var(--primary-color);
 }
 
 header .navbar {
@@ -63,13 +62,21 @@ header .navbar {
     justify-content: space-between;
 }
 
-.navbar .nav-logo {
-    background-color: var(--background-colour);
-    padding: 0 10px 0 10px;
-    border-top-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    animation: color-logo 4s infinite;
-    transition: 4s ease;
+.nav-logo {
+    height: 10vh;
+    width: 50%;
+    scale: 55%;
+    margin-top: -33px;
+    transform: translate(-300px, -20px);
+    align-items: center;
+
+}
+
+.nav-logo #logo {
+    height: 35vh;
+    width: 50%;
+    margin-top: -10px;
+
 }
 
 .navbar .nav-logo .logo-text {
@@ -81,8 +88,8 @@ header .navbar {
 }
 
 .navbar .nav-link {
-    color: var(--background-colour);
-    text-shadow: 10px 10px 10px rgb(0, 0, 0);
+    color: var(--background-color);
+    /* text-shadow: 10px 10px 10px rgb(0, 0, 0); */
 }
 
 .navbar .nav-menu .user-interface .nav-link {
@@ -97,6 +104,9 @@ header .navbar {
 }
 
 .navbar .nav-menu .nav-link {
+    display: flex;
+    align-items: center;
+    transform: translate(120px, 5px);
     padding: 10px 18px;
     font-size: 14px;
     transition: .3s ease;
@@ -106,7 +116,7 @@ header .navbar {
     color: var(--primary-color);
     background-color: var(--hover-color);
     border-radius: 20px;
-    scale: 2;
+    scale: 1;
 }
 
 .navbar .nav-menu .user-interface .nav-link:hover {
@@ -119,7 +129,7 @@ header .navbar {
 
 .hero-section {
     min-height: 80vh;
-    background: linear-gradient(90deg, rgb(67, 18, 18), var(--primary-color));
+    background: var(--background-color);
 }
 
 .hero-section .section-content {
@@ -148,7 +158,7 @@ header .navbar {
     height: 119vh;
     width: 100%;
     border: 5px solid var(--primary-color);
-    border-top-left-radius: 90rem;
+    border-top-left-radius: 50rem;
     border-bottom: 0;
     border-right: 0;
     margin-top: -120px;
@@ -165,9 +175,10 @@ header .navbar {
     color: var(--background-colour);
     font-weight: bolder;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-shadow: 10px 10px 20px black;
+
     backdrop-filter: blur(20px);
     text-emphasis-color: salmon;
+
 }
 
 .hero-section .hero-details .subtitle {
@@ -177,7 +188,7 @@ header .navbar {
     font-weight: 700;
     color: rgb(162, 104, 9);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-shadow: 10px 10px 20px black;
+
 }
 
 .hero-section .hero-details .description {
@@ -186,14 +197,14 @@ header .navbar {
     color: rgb(122, 102, 75);
     font-weight: bolder;
     margin: 15px 0px 40px 0;
-    text-shadow: 10px 10px 20px black;
+
 }
 
 .hero-section .hero-details .order-button {
     width: fit-content;
     border-radius: 100rem;
     display: flex;
-    box-shadow: 10px 10px 20px var(--primary-color);
+
 }
 
 .hero-section .shaping-background {
@@ -229,9 +240,11 @@ header .navbar {
     0% {
         background-color: bisque;
     }
+
     50% {
         background-color: rgb(227, 174, 114);
     }
+
     100% {
         background-color: bisque;
     }
@@ -241,9 +254,11 @@ header .navbar {
     0% {
         background-color: bisque;
     }
+
     50% {
         background-color: rgb(227, 174, 114);
     }
+
     100% {
         background-color: bisque;
     }
