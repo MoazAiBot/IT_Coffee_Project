@@ -73,16 +73,13 @@ header .navbar {
 }
 
 .navbar .nav-logo .logo-text {
-    color: var(--primary-color);
-    padding: 10px;
-    font-weight: bolder;
-    text-shadow: 5px 5px 10px black;
-    font-weight: 900;
+    color: rgb(218, 206, 171);
+    text-shadow: 5px 5px 5px black;
+    font-weight: 800;
 }
 
 .navbar .nav-link {
-    color: var(--background-colour);
-    text-shadow: 10px 10px 10px rgb(0, 0, 0);
+    color: rgb(214, 198, 153);
 }
 
 .navbar .nav-menu .user-interface .nav-link {
@@ -118,8 +115,10 @@ header .navbar {
 /*Hero STYLING*/
 
 .hero-section {
-    min-height: 80vh;
-    background: linear-gradient(90deg, rgb(67, 18, 18), var(--primary-color));
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
 }
 
 .hero-section .section-content {
@@ -162,12 +161,9 @@ header .navbar {
     height: 10vh;
     width: fit-content;
     font-size: xx-large;
-    color: var(--background-colour);
-    font-weight: bolder;
+    display: flex;
+    color: var(--primary-color);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-shadow: 10px 10px 20px black;
-    backdrop-filter: blur(20px);
-    text-emphasis-color: salmon;
 }
 
 .hero-section .hero-details .subtitle {
@@ -177,16 +173,18 @@ header .navbar {
     font-weight: 700;
     color: rgb(162, 104, 9);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-shadow: 10px 10px 20px black;
+}
+
+.hero-section .hero-image {
+    text-shadow: 2px 2px 2px red;
+    shape-rendering: crispEdges;
 }
 
 .hero-section .hero-details .description {
     font-size: large;
-    width: 100%;
-    color: rgb(122, 102, 75);
-    font-weight: bolder;
-    margin: 15px 0px 40px 0;
-    text-shadow: 10px 10px 20px black;
+    max-width: 70%;
+    color: var(--primary-color);
+    margin: 15px 0px 40px;
 }
 
 .hero-section .hero-details .order-button {
