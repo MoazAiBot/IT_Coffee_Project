@@ -7,8 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffe Website</title>
     <link rel="stylesheet" href="Coffe.css">
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!--Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--Fonts-->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+    <!--JavaScript-->
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script type="text/javascript" src="darkmode.js" defer></script>
 </head>
 
@@ -19,8 +29,8 @@
 
         <nav class="navbar section-content">
             <div class="nav-logo">
-                <a href="#">
-                    <img src="d:\FCAI\Coffee_Project\IT_Coffee_Project\Material\Icon-topaz-sharpen-upscale-3.5x.png" class="logo">
+                <a href="coffee.html">
+                    <img src="d:\FCAI\Coffee_Project\IT_Coffee_Project\Material\logo.png" href="coffee.html" class="logo">
                 </a>
             </div>
 
@@ -29,30 +39,22 @@
             <ul class="nav-menu">
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Shop</a>
+                    <a href="d:\FCAI\Coffee_Project\IT_Coffee_Project\trial\shop.html" class="nav-link">Shop</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
+                    <a href="#about" class="nav-link">About</a>
                     <!--Go to About US page -->
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Menu</a>
+                    <a href="#sales" style="scroll-behavior: smooth;" class="nav-link">Sales</a>
                 </li>
-                <!--  /*Will be in User-interface*/              
-                <li class="nav-item">
-                <a href="#" class="nav-link">Login & Registrition</a>
-                </li>
-                -->
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Contact US</a>
+                    <a href="file:///D:/FCAI/Coffee_Project/IT_Coffee_Project/location/location.html" class="nav-link">Contact US</a>
                 </li>
 
                 <li class="nav-item user-interface">
-                    <a href="#" class="nav-link"><i class='bx bxs-user'></i></a>
+                    <a href="Login.html" class="nav-link"><i class='bx bxs-user'></i></a>
                 </li>
                 <li>
                     <button id="theme-switch">
@@ -84,7 +86,7 @@
                         <p class="description">Welcome to our Coffee Paradise, where every bean tells a story and every cup sparks joy.</p>
 
                         <div class="order-button">
-                            <a href="#" class="button order-now">Order Now</a>
+                            <a href="login.html" class="button order-now">Order Now</a>
                             <!--Send TO login & Regestirtion-->
                         </div>
 
@@ -101,8 +103,138 @@
                 </div>
             </div>
         </section>
+        <!--Best Products-->
+        <div class="container swiper" id="sales">
+            <h2 class="sale-title">Best Sales</h2>
+            <div class="slider-wrapper">
+
+                <div class="card-list swiper-wrapper">
+
+                    <div class="card-item swiper-slide">
+                        <img src="image/brazilan_coffe.png" alt="" class="pro-img">
+                        <h2 class="pro-name">Brazilian Coffee</h2>
+                        <p class="pro-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, obcaecati!</p>
+                        <h3 class="pro-price">10.00$</h3>
+                        <button class="buy-button"> <a class="linkbestsales" href="d:\FCAI\Coffee_Project\IT_Coffee_Project\trial\braziliancoffe.html"> buy</a></button>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="image/coffe_roasted_.png" alt="" class="pro-img">
+                        <h2 class="pro-name">Indian Coffee</h2>
+                        <p class="pro-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, obcaecati!</p>
+                        <h3 class="pro-price">10.00$</h3>
+                        <button class="buy-button"> <a class="linkbestsales" href="d:\FCAI\Coffee_Project\IT_Coffee_Project\trial\roastedcoffee.html"> buy</a></button>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="image/Nigga-removebg-preview.png" alt="" class="pro-img">
+                        <h2 class="pro-name">Bolnde Coffee</h2>
+                        <p class="pro-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, obcaecati!</p>
+                        <h3 class="pro-price">10.00$</h3>
+                        <button class="buy-button"><a class="linkbestsales" href="d:\FCAI\Coffee_Project\IT_Coffee_Project\trial\africancoffee.html"> buy</a></button>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="image/LIght_roasted_coffe-removebg-preview.png" alt="" class="pro-img">
+                        <h2 class="pro-name">Roasted Coffee</h2>
+                        <p class="pro-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, obcaecati!</p>
+                        <h3 class="pro-price">10.00$</h3>
+                        <button class="buy-button"> <a class="linkbestsales" href="d:\FCAI\Coffee_Project\IT_Coffee_Project\trial\lightroasted.html"> buy</a></button>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="image/coffe_bean-removebg-preview.png" alt="" class="pro-img">
+                        <h2 class="pro-name"> Coffee</h2>
+                        <p class="pro-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, obcaecati!</p>
+                        <h3 class="pro-price">10.00$</h3>
+                        <button class="buy-button"> <a class="linkbestsales" href="d:\FCAI\Coffee_Project\IT_Coffee_Project\trial\coffeebean.html"> buy</a></button>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="image/Colompian_coffee-removebg-preview.png" alt="" class="pro-img">
+                        <h2 class="pro-name">Colompian Coffee</h2>
+                        <p class="pro-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, obcaecati!</p>
+                        <h3 class="pro-price">10.00$</h3>
+                        <button class="buy-button"> <a class="linkbestsales" href="d:\FCAI\Coffee_Project\IT_Coffee_Project\trial\colompiancoffee.html"> buy</a></button>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="image/Screenshot_2025-04-26_174442-removebg-preview.png" alt="" class="pro-img">
+                        <h2 class="pro-name"> Coffee Cookies </h2>
+                        <p class="pro-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, obcaecati!</p>
+                        <h3 class="pro-price">10.00$</h3>
+                        <button class="buy-button"> <a class="linkbestsales" href="d:\FCAI\Coffee_Project\IT_Coffee_Project\trial\cookies.html"> buy</a></button>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="image/Screenshot_2025-04-26_175850-removebg-preview.png" alt="" class="pro-img">
+                        <h2 class="pro-name">Bateh</h2>
+                        <p class="pro-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, obcaecati!</p>
+                        <h3 class="pro-price">10.00$</h3>
+                        <button class="buy-button"> <a class="linkbestsales" href="d:\FCAI\Coffee_Project\IT_Coffee_Project\trial\croissant.html"> buy</a></button>
+                    </div>
+                </div>
+
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+
+            </div>
+        </div>
+
+        <!--Rate-us-->
+
+        <div class="our-customars">
+            <h2 class="rate-title">Our Customers</h2>
+            <div class="our-rate-container">
+                <div class="card"><img src="d:\FCAI\Coffee_Project\IT_Coffee_Project\Material\rating1.png" class="img-rate-size" alt=""></div>
+                <div class="card"><img src="d:\FCAI\Coffee_Project\IT_Coffee_Project\Material\rating 2.png" class="img-rate-size" alt=""></div>
+                <div class="card"><img src="d:\FCAI\Coffee_Project\IT_Coffee_Project\Material\rating3.png" class="img-rate-size" alt=""></div>
+            </div>
+        </div>
+        <!--Advantages-->
+
+        <div class="Advantages-container">
+            <div>
+                <h2 class="advg-title">Why Daily Grind ?</h2>
+            </div>
+            <div class="Advantages">
+
+                <div class="card-advg">
+                    <i class="fa-solid fa-motorcycle"></i>
+                    <p>Fast & Safe Delievery </p>
+                </div>
+                <div class="card-advg"><i class="fa-solid fa-mug-hot"></i>
+                    <p>Fresh & Hot Coffee,That Breathe</p>
+                </div>
+                <div class="card-advg"><i class="fa-solid fa-money-check-dollar"></i>
+                    <p>Best Price& Offers</p>
+                </div>
+                <div class="card-advg"><i class="fa-solid fa-users-rays"></i>
+                    <p>Trusted By Many Users</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!--CoffeShop-Place-->
+
+
+
+        <div class="place-container">
+
+            <div class="card-list">
+
+                <div class="place-card"><img src="d:\FCAI\Coffee_Project\IT_Coffee_Project\Material\coffe-place5.jpg" class="place-img" alt=""></div>
+                <div class="place-card manipulate"><img src="d:\FCAI\Coffee_Project\IT_Coffee_Project\Material\coffee-place3.jpg" class="place-img" alt=""></div>
+                <div class="place-card"><img src="d:\FCAI\Coffee_Project\IT_Coffee_Project\Material\coffe-place4.jpg" class="place-img" alt=""></div>
+            </div>
+            <div class="side-place-title">
+                <h2 class="place-title">Coffee Design</h2>
+            </div>
+
+        </div>
+
+
         <!--About Section-->
-        <section class="about-section">
+        <section class="about-section" id="about" class="darkmode">
 
             <div class="section-content">
 
@@ -127,7 +259,9 @@
             </div>
         </section>
     </main>
-    <script src="script.js"></script>
+    <script src="scripthome.js" defer></script>
+    <script type="text/javascript" src="darkmode.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>

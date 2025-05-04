@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Special+Gothic+Expanded+One&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+}
+
+.nav {
+    background-color: #661b1b;
+    padding-top: 0;
+    margin: 0;
+    height: 100px;
+    width: 100%;
+}
+
+.nav a {
+    float: right;
+    position: relative;
+    color: #cfb277;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: "Open sans";
+    font-weight: 700;
+    transform: translate(-30px, 20px);
+    text-indent: 25px;
+    padding-right: 30px;
+}
+
+.nav a:hover {
+    color: rgb(156, 106, 40);
+}
+
+.nav img {
+    width: 200px;
+    height: 158px;
+    transform: translate(10px, -30px);
+}
+
+.MyCart {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: parisienne;
+    font-size: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-decoration: solid;
+    /* padding: 50px 0px 50px 550px; */
+}
+
+button {
+    border-radius: 10px;
+    background-color: #661b1b;
+    color: white;
+    transition: 0.3s ease;
+    width: 300px;
+    font-size: 25px;
+    font-weight: bold;
+    height: 50px;
+}
+
+button:hover {
+    background-color: #812e2e;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #661b1b;
+    text-align: center;
+}
+
+
+/*input[type="number"] {
+    width: 50px;
+    text-align: center;
+    
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color:#cfb277;
+}*/
+
+input[type="number"] {
+    width: 50px;
+    padding: 6px;
+    font-size: 16px;
+    border: 2px solid #661b1b;
+    border-radius: 6px;
+    background-color: #fdf8f3;
+    color: #5a3e2b;
+    transition: 0.3s;
+    font-family: "Open sans";
+    font-weight: bold;
+    text-align: center;
+}
+
+input[type="number"]:focus {
+    /*The :focus part means apply this style only when the user clicks into the box */
+    border-color: #7b4c2a;
+    box-shadow: 0 0 5px #d9b48f;
+    outline: none;
+}
+
+.remove-btn {
+    background-color: #661b1b;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    font-size: medium;
+    transition: 0.5s;
+}
+
+.checkout-btn {
+    background-color: #661b1b;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    font-size: medium;
+    transition: 0.5s;
+}
+
+.checkout-btn a {
+    text-decoration: none;
+    color: #cfb277;
+}
+
+.remove-btn:hover,
+.checkout-btn:hover {
+    background-color: #812e2e;
+    letter-spacing: 1px;
+}
+
+.cart-summary {
+    margin-top: 20px;
+    padding-left: 50px;
+}
+
+.cart-container {
+    padding-left: 50px;
+}
