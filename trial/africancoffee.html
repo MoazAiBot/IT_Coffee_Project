@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!--Main Css File-->
     <link rel="stylesheet" href="africancoffee.css">
@@ -11,39 +12,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inder&display=swap" rel="stylesheet">
     <!--Font Awsome library-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mystery+Quest&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="nav">
         <a href="#contact">Contact US</a>
         <a href="#about">About</a>
         <a href="shop.html">Shop</a>
         <a class="active" href="#home">Home</a>
-        <img src="Icon.png" alt="Logo"/>
+        <img src="Icon.png" alt="Logo" />
     </div>
-    
+
     <div class="item-page">
         <!-- Left part -->
         <div class="left-page">
-            <img src="media/Nigga-removebg-preview.png" alt="">
+            <img src="d:\FCAI\Coffee_Project\IT_Coffee_Project\Index\image\5.png" alt="">
             <span></span>
         </div>
         <!-- Right part -->
         <div class="right-page">
             <div class="contant">
                 <a class="icon-cart" href="cart.html" target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>
-                <h1>African Coffee</h1>
+                <h1>Dark Coffee</h1>
                 <span class="span-name"></span>
                 <p class="para">
-                    African Coffee<br>
-                    Bright, fruity, and full of character with floral notes and citrus hints.<br>
-                    Sourced from the highlands of Africa, every sip tells a story.
+                    African Coffee<br> Bright, fruity, and full of character with floral notes and citrus hints.<br> Sourced from the highlands of Africa, every sip tells a story.
                 </p>
                 <div class="price-count">
                     <div class="icon-price"><i class="fa-solid fa-money-check-dollar"></i></div>
@@ -56,7 +55,7 @@
                 </div>
                 <span class="span-price"></span>
                 <button id="addToCart" class="add-to-cart-button">Add To Cart</button>
-            </div>   
+            </div>
         </div>
     </div>
     <div class="product-details">
@@ -67,23 +66,33 @@
         <table class="product-details-table">
             <tr>
                 <th>Material</th>
-                <td><p>African Coffee 100% African</p></td>
+                <td>
+                    <p>African Coffee 100% African</p>
+                </td>
             </tr>
             <tr>
                 <th>Pieces number</th>
-                <td><p>1</p></td>
+                <td>
+                    <p>1</p>
+                </td>
             </tr>
             <tr>
                 <th>Flavor</th>
-                <td><p>Coffee</p></td>
+                <td>
+                    <p>Coffee</p>
+                </td>
             </tr>
             <tr>
                 <th>Weight</th>
-                <td><p>250g</p></td>
+                <td>
+                    <p>250g</p>
+                </td>
             </tr>
             <tr>
                 <th>Calories</th>
-                <td><p>0</p></td>
+                <td>
+                    <p>0</p>
+                </td>
             </tr>
         </table>
     </div>
@@ -91,13 +100,13 @@
     <script>
         let quantity = 1;
         const quantityDisplay = document.getElementById("quantity");
-    
+
         // Increase quantity
         document.getElementById("increase").addEventListener("click", () => {
             quantity++;
             quantityDisplay.textContent = quantity;
         });
-    
+
         // Decrease quantity
         document.getElementById("decrease").addEventListener("click", () => {
             if (quantity > 1) {
@@ -105,11 +114,11 @@
                 quantityDisplay.textContent = quantity;
             }
         });
-    
+
         // Add to Cart functionality
         document.getElementById("addToCart").addEventListener("click", () => {
             const cart = JSON.parse(localStorage.getItem("cart")) || [];
-    
+
             const newItem = {
                 id: "African Coffee",
                 name: "African Coffee",
@@ -117,16 +126,16 @@
                 quantity: quantity,
                 image: "media/Nigga-removebg-preview.png"
             };
-    
+
             // Check if item already in cart
             const existingItemIndex = cart.findIndex(item => item.id === newItem.id);
-    
+
             if (existingItemIndex !== -1) {
                 cart[existingItemIndex].quantity += quantity;
             } else {
                 cart.push(newItem);
             }
-    
+
             localStorage.setItem("cart", JSON.stringify(cart));
             Swal.fire({
                 position: "center",
@@ -134,12 +143,13 @@
                 title: "Item added to the cart",
                 showConfirmButton: false,
                 timer: 1500,
-                background: "#cfb277",         
-                color: "black",              
+                background: "#cfb277",
+                color: "black",
                 iconColor: "#701e1e",
             });
         });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
+
 </html>
