@@ -32,7 +32,7 @@
     <div class="item-page">
         <!-- Left part -->
         <div class="left-page">
-            <img src="d:\FCAI\Coffee_Project\IT_Coffee_Project\Index\image\5.png" alt="">
+            <img src="d:\FCAI\Coffee_Project\IT_Coffee_Project\Index\image\Nigga-removebg-preview.png" alt="">
             <span></span>
         </div>
         <!-- Right part -->
@@ -98,31 +98,31 @@
     </div>
 
     <script>
-       let quantity = 1;
+        let quantity = 1;
         const quantityDisplay = document.getElementById("quantity");
-    
+
         // Increase quantity
         const inc = document.getElementById("increase");
-      inc .addEventListener("click", function() {
+        inc.addEventListener("click", function() {
             quantity++;
             quantityDisplay.innerHTML = quantity;
         });
-    
+
         // Decrease quantity
-        const dec=document.getElementById("decrease");
+        const dec = document.getElementById("decrease");
         dec.addEventListener("click", function() {
             if (quantity > 1) {
                 quantity--;
                 quantityDisplay.innerHTML = quantity;
             }
         });
-    
+
         // Add to Cart functionality
         document.getElementById("addToCart").addEventListener("click", function() {
-            let cartData=localStorage.getItem("cart");
-            let cart=[];
-            if(cartData){
-                cart=JSON.parse(cartData);
+            let cartData = localStorage.getItem("cart");
+            let cart = [];
+            if (cartData) {
+                cart = JSON.parse(cartData);
             }
 
             const newItem = {
@@ -134,18 +134,18 @@
             };
 
             // Check if item already in cart
-            let found=false;
-           for(let i=0;i<cart.length;i++){
-            if(cart[i].id===newItem.id){
-                cart[i].quantity+=newItem.quantity;
-                found=true;
-                break;
+            let found = false;
+            for (let i = 0; i < cart.length; i++) {
+                if (cart[i].id === newItem.id) {
+                    cart[i].quantity += newItem.quantity;
+                    found = true;
+                    break;
+                }
             }
-           }
-           if(!found){
-            cart.push(newItem);
-           }
-           
+            if (!found) {
+                cart.push(newItem);
+            }
+
             localStorage.setItem("cart", JSON.stringify(cart));
 
             //success popup
@@ -155,8 +155,8 @@
                 title: "Item added to the cart",
                 showConfirmButton: false,
                 timer: 1500,
-                background: "#cfb277",         
-                color: "black",              
+                background: "#cfb277",
+                color: "black",
                 iconColor: "#701e1e",
             });
         });
