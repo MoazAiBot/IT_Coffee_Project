@@ -32,7 +32,7 @@
     <div class="item-page">
         <!-- Left part -->
         <div class="left-page">
-            <img src="d:\FCAI\Coffee_Project\IT_Coffee_Project\Index\image\6.png" alt="">
+            <img src="d:\FCAI\Coffee_Project\IT_Coffee_Project\Index\image\LIght_roasted_coffe-removebg-preview.png" alt="">
             <span></span>
         </div>
         <!-- Right part -->
@@ -102,22 +102,28 @@
         const quantityDisplay = document.getElementById("quantity");
 
         // Increase quantity
-        document.getElementById("increase").addEventListener("click", () => {
+        const inc = document.getElementById("increase");
+        inc.addEventListener("click", function() {
             quantity++;
-            quantityDisplay.textContent = quantity;
+            quantityDisplay.innerHTML = quantity;
         });
 
         // Decrease quantity
-        document.getElementById("decrease").addEventListener("click", () => {
+        const dec = document.getElementById("decrease");
+        dec.addEventListener("click", function() {
             if (quantity > 1) {
                 quantity--;
-                quantityDisplay.textContent = quantity;
+                quantityDisplay.innerHTML = quantity;
             }
         });
 
         // Add to Cart functionality
-        document.getElementById("addToCart").addEventListener("click", () => {
-            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+        document.getElementById("addToCart").addEventListener("click", function() {
+            let cartData = localStorage.getItem("cart");
+            let cart = [];
+            if (cartData) {
+                cart = JSON.parse(cartData);
+            }
 
             const newItem = {
                 id: "Light Roasted Coffee",
@@ -128,15 +134,21 @@
             };
 
             // Check if item already in cart
-            const existingItemIndex = cart.findIndex(item => item.id === newItem.id);
-
-            if (existingItemIndex !== -1) {
-                cart[existingItemIndex].quantity += quantity;
-            } else {
+            let found = false;
+            for (let i = 0; i < cart.length; i++) {
+                if (cart[i].id === newItem.id) {
+                    cart[i].quantity += newItem.quantity;
+                    found = true;
+                    break;
+                }
+            }
+            if (!found) {
                 cart.push(newItem);
             }
 
             localStorage.setItem("cart", JSON.stringify(cart));
+
+            //success popup
             Swal.fire({
                 position: "center",
                 icon: "success",
