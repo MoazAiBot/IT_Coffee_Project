@@ -89,26 +89,32 @@
     </div>
 
     <script>
-        let quantity = 1;
+       let quantity = 1;
         const quantityDisplay = document.getElementById("quantity");
     
         // Increase quantity
-        document.getElementById("increase").addEventListener("click", () => {
+        const inc = document.getElementById("increase");
+      inc .addEventListener("click", function() {
             quantity++;
-            quantityDisplay.textContent = quantity;
+            quantityDisplay.innerHTML = quantity;
         });
     
         // Decrease quantity
-        document.getElementById("decrease").addEventListener("click", () => {
+        const dec=document.getElementById("decrease");
+        dec.addEventListener("click", function() {
             if (quantity > 1) {
                 quantity--;
-                quantityDisplay.textContent = quantity;
+                quantityDisplay.innerHTML = quantity;
             }
         });
     
         // Add to Cart functionality
-        document.getElementById("addToCart").addEventListener("click", () => {
-            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+        document.getElementById("addToCart").addEventListener("click", function() {
+            let cartData=localStorage.getItem("cart");
+            let cart=[];
+            if(cartData){
+                cart=JSON.parse(cartData);
+            }
     
             const newItem = {
                 id: "Cookies",
@@ -118,16 +124,22 @@
                 image: "media/kokies-removebg-preview.png"
             };
     
-            // Check if item already in cart
-            const existingItemIndex = cart.findIndex(item => item.id === newItem.id);
-    
-            if (existingItemIndex !== -1) {
-                cart[existingItemIndex].quantity += quantity;
-            } else {
-                cart.push(newItem);
+           // Check if item already in cart
+            let found=false;
+           for(let i=0;i<cart.length;i++){
+            if(cart[i].id===newItem.id){
+                cart[i].quantity+=newItem.quantity;
+                found=true;
+                break;
             }
-    
+           }
+           if(!found){
+            cart.push(newItem);
+           }
+           
             localStorage.setItem("cart", JSON.stringify(cart));
+
+            //success popup
             Swal.fire({
                 position: "center",
                 icon: "success",
