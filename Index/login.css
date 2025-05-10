@@ -127,7 +127,7 @@ header .navbar {
 .main-container {
     display: flex;
     background-color: var(--background-colour);
-    height: 100vh;
+    height: 100.05vh;
     width: 100%;
 }
 
