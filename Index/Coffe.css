@@ -3,25 +3,6 @@
 /*Styling for Whole Site*/
 
 :root {
-    /*body*/
-    --body-color: white;
-    --primary-color: rgb(83, 29, 16);
-    --hover-color: rgb(184, 106, 58);
-    --background-colour: rgb(222, 198, 170);
-    --navbar-color: rgb(240, 195, 142);
-    /*Hero-Section*/
-    --title-color: rgb(112, 40, 22);
-    --subtitle-color: rgb(162, 104, 9);
-    --description-color: rgb(184, 106, 58);
-    --video-border: rgb(112, 40, 22);
-    /*Best-sales*/
-    --best-sales-color: white;
-    /*About-Section*/
-    --about-back: rgb(112, 40, 22);
-    --about-text: white;
-}
-
-.darkmode {
     /*Body*/
     --body-color: rgb(60, 18, 8);
     --navbar-color: rgb(240, 195, 142);
@@ -37,6 +18,25 @@
     --best-sales-color: rgb(87, 32, 19);
     /* about-section*/
     --about-back: rgb(60, 18, 8);
+    --about-text: white;
+}
+
+.darkmode {
+    /*body*/
+    --body-color: white;
+    --primary-color: rgb(83, 29, 16);
+    --hover-color: rgb(184, 106, 58);
+    --background-colour: rgb(222, 198, 170);
+    --navbar-color: rgb(240, 195, 142);
+    /*Hero-Section*/
+    --title-color: rgb(112, 40, 22);
+    --subtitle-color: rgb(162, 104, 9);
+    --description-color: rgb(184, 106, 58);
+    --video-border: rgb(112, 40, 22);
+    /*Best-sales*/
+    --best-sales-color: white;
+    /*About-Section*/
+    --about-back: rgb(112, 40, 22);
     --about-text: white;
 }
 
@@ -301,11 +301,9 @@ header .navbar {
     0% {
         background-color: bisque;
     }
-
     50% {
         background-color: rgb(227, 174, 114);
     }
-
     100% {
         background-color: bisque;
     }
@@ -345,7 +343,6 @@ header .navbar {
         opacity: 0;
         scale: .5;
     }
-
     to {
         opacity: 1;
         scale: 1;
@@ -359,12 +356,11 @@ header .navbar {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 70px;
-    color: var();
+    color: var(--background-colour);
     font-weight: 900;
     font-size: xx-large;
     padding: 20px 30px;
     text-decoration: underline;
-    color: rgb(222, 198, 170);
 }
 
 .container {
@@ -387,7 +383,7 @@ header .navbar {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .card-list .card-item .pro-img {
@@ -409,12 +405,10 @@ header .navbar {
 
 .card-list .card-item .pro-name {
     margin-bottom: 30px;
-    color: rgb(222, 198, 170);
 }
 
 .card-list .card-item .pro-details {
     margin-bottom: 20px;
-    color: rgb(222, 198, 170);
 }
 
 .card-list .card-item .buy-button {
@@ -425,7 +419,7 @@ header .navbar {
     border: 10px solid var(--background-colour);
     margin-top: 30px;
     cursor: pointer;
-    background-color: rgb(112, 40, 22);
+    background-color: var(--background-colour);
     color: var(--title-color);
     transition: .3s ease;
 }
@@ -437,7 +431,6 @@ header .navbar {
 
 .pro-price {
     text-decoration: underline;
-    color: rgb(222, 198, 170);
 }
 
 .linkbestsales {
@@ -597,7 +590,6 @@ header .navbar {
         opacity: 0;
         scale: .5;
     }
-
     to {
         opacity: 1;
         scale: .7;
