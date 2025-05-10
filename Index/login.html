@@ -21,7 +21,7 @@
         <nav class="navbar section-content">
             <div class="nav-logo">
                 <a href="d:\FCAI\Coffee_Project\IT_Coffee_Project\Index\coffee.html">
-                    <img src="icon.png U" class="logo">
+                    <img src="../Material/logo.png" class="logo">
                 </a>
             </div>
 
@@ -30,11 +30,11 @@
             <ul class="nav-menu">
 
                 <li class="nav-item">
-                    <a href="d:\FCAI\Coffee_Project\IT_Coffee_Project\trial\shop.html" class="nav-link">Shop</a>
+                    <a href="../trial/shop.html" class="nav-link">Shop</a>
                 </li>
                 <li class="nav-item">
-                    <a href="file:///D:/FCAI/Coffee_Project/IT_Coffee_Project/Index/coffee.html#sales" class="nav-link">About</a> 
-                   <!--Go to About US page -->
+                    <a href="file:///D:/FCAI/Coffee_Project/IT_Coffee_Project/Index/coffee.html#about" class="nav-link">About</a>
+                    <!--Go to About US page -->
                 </li>
                 <li class="nav-item">
                     <a href="file:///D:/FCAI/Coffee_Project/IT_Coffee_Project/Index/coffee.html#sales" class="nav-link">Sales</a>
@@ -70,9 +70,10 @@
                         <i class='bx bxs-user login-icon' class="login-icon"></i>
                         <h2 class="login-title">Login</h2>
 
-                        <form action="file:///D:/FCAI/Coffee_Project/IT_Coffee_Project/trial/shop.html" required method="get">
+                        <form id="myForm" action="../trial/shop.html" required method="get">
                             <input type="text" name="username" placeholder="Username" maxlength="11" required autofocus>
-                            <input type="email" name="email" placeholder="user@email.com" required maxlength="25">
+                            <input id="email" type="text" name="email" placeholder="user@email.com" required maxlength="25">
+                            <span id="error" style="color: red;"></span>
                             <input type="password" name="password" placeholder="Password" required maxlength="8">
                             <button type="submit">Login</button>
                         </form>
@@ -85,11 +86,31 @@
                 </div>
 
                 <div class="image-side">
-                    <img src="d:\FCAI\Coffee_Project\IT_Coffee_Project\Material\signup.jpg" alt="half background" />
+                    <img src="../Material//signup.jpg" alt="half background" />
                 </div>
             </div>
         </section>
     </main>
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Stop form from submitting
+
+            const emailInput = document.getElementById("email").value;
+            const errorSpan = document.getElementById("error");
+
+            // Simple regex for email validation
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (emailPattern.test(emailInput)) {
+                errorSpan.textContent = ""; // Clear error
+                alert("Email is valid! ✅");
+                // You can submit the form here if needed
+                // this.submit();
+            } else {
+                errorSpan.textContent = "Please enter a valid email address.";
+            }
+        });
+    </script>
 
 </body>
 
