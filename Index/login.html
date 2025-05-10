@@ -37,12 +37,14 @@
                     <!--Go to About US page -->
                 </li>
                 <li class="nav-item">
-                    <a href="file:///D:/FCAI/Coffee_Project/IT_Coffee_Project/Index/coffee.html#sales" class="nav-link">Sales</a>
+                    <a href="file:///D:/FCAI/Coffee_Project/IT_Coffee_Project/Index/coffee.html#sales"
+                        class="nav-link">Sales</a>
                 </li>
 
 
                 <li class="nav-item">
-                    <a href="file:///D:/FCAI/Coffee_Project/IT_Coffee_Project/location/location.html" class="nav-link">Contact US</a>
+                    <a href="file:///D:/FCAI/Coffee_Project/IT_Coffee_Project/location/location.html"
+                        class="nav-link">Contact US</a>
                 </li>
 
                 <li class="nav-item user-interface">
@@ -70,9 +72,11 @@
                         <i class='bx bxs-user login-icon' class="login-icon"></i>
                         <h2 class="login-title">Login</h2>
 
-                        <form action="file:///D:/FCAI/Coffee_Project/IT_Coffee_Project/trial/shop.html" required method="get">
+                        <form action="file:///D:/FCAI/Coffee_Project/IT_Coffee_Project/trial/shop.html" required
+                            method="get">
                             <input type="text" name="username" placeholder="Username" maxlength="11" required autofocus>
-                            <input id="email" type="text" name="email" placeholder="user@email.com" required maxlength="25">
+                            <input id="email" type="text" name="email" placeholder="user@email.com" required
+                                maxlength="25">
                             <span id="error" style="color: red;"></span>
                             <input type="password" name="password" placeholder="Password" required maxlength="8">
                             <button type="submit">Login</button>
@@ -92,7 +96,7 @@
         </section>
     </main>
     <script>
-        document.getElementById("myForm").addEventListener("submit", function(event) {
+        document.getElementById("myForm").addEventListener("submit", function (event) {
             event.preventDefault(); // Stop form from submitting
 
             const emailInput = document.getElementById("email").value;
@@ -104,6 +108,7 @@
             if (emailPattern.test(emailInput)) {
                 errorSpan.textContent = ""; // Clear error
                 alert("Email is valid! ✅");
+                window.location.href = "d:\\FCAI\\Coffee_Project\\IT_Coffee_Project\\trial\\shop.html";
                 // You can submit the form here if needed
                 // this.submit();
             } else {
