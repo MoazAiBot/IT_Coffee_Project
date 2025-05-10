@@ -420,9 +420,10 @@ header .navbar {
     font-weight: 900;
     font-size: xx-large;
     border: 10px solid var(--background-colour);
+    border-radius: 20px;
     margin-top: 30px;
     cursor: pointer;
-    background-color: var(--background-colour);
+    background-color: var(--best-sales-title);
     color: var(--title-color);
     transition: .3s ease;
 }
@@ -447,7 +448,7 @@ header .navbar {
 .our-customars .rate-title {
     margin-top: 100px;
     text-align: center;
-    color: var(--primary-color);
+    color: var(--best-sales-title);
     font-size: xx-large;
     font-weight: bolder;
     text-decoration: underline;
@@ -502,6 +503,8 @@ header .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--best-sales-title);
+    background-color: var();
     gap: 200px;
     margin: 0 80px 80px 80px;
     animation: apear linear;
