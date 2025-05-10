@@ -21,22 +21,31 @@
     <header>
         <nav class="navbar section-content">
             <div class="nav-logo">
+                <a href="d:\FCAI\Coffee_Project\IT_Coffee_Project\Index\coffee.html">
+                    <img src="d:\FCAI\Coffee_Project\IT_Coffee_Project\Material\logo.png" class="logo">
                 </a>
             </div>
 
             <ul class="nav-menu">
 
                 <li class="nav-item">
+                    <a href="d:\FCAI\Coffee_Project\IT_Coffee_Project\trial\shop.html" class="nav-link">Shop</a>
                 </li>
                 <li class="nav-item">
+                    <a href="file:///D:/FCAI/Coffee_Project/IT_Coffee_Project/Index/coffee.html#about"
+                        class="nav-link">About</a>
                     <!--Go to About US page -->
                 </li>
                 <li class="nav-item">
+                    <a href="file:///D:/FCAI/Coffee_Project/IT_Coffee_Project/Index/coffee.html#sales"
+                        class="nav-link">Sales</a>
                 </li>
 
 
 
                 <li class="nav-item">
+                    <a href="file:///D:/FCAI/Coffee_Project/IT_Coffee_Project/location/location.html"
+                        class="nav-link">Contact US</a>
                 </li>
 
                 <li class="nav-item user-interface">
@@ -57,6 +66,8 @@
         <section class="main-container">
             <!-- Left Side: Image -->
             <div class="left-side">
+                <img src="d:\FCAI\Coffee_Project\IT_Coffee_Project\Material\gallery-1.jpg" alt="Signup Image"
+                    class="signup-img">
             </div>
 
             <!-- Right Side: Form -->
@@ -74,15 +85,15 @@
                         <form action="#" onsubmit="return validateForm(event)" method="get">
                         <form action="#" onsubmit="return validateForm(event)" method="post">
 
-                        
+
                             <div class="name-row">
-                                <input type="text" id="firstName" placeholder="First Name" maxlength="11" >
+                                <input type="text" id="firstName" placeholder="First Name" maxlength="11">
                                 <span id="firstNameError" class="error-message"></span>
 
-                                <input type="text" id="lastName" placeholder="Last Name " maxlength="11" >
+                                <input type="text" id="lastName" placeholder="Last Name " maxlength="11">
                                 <span id="lastNameError" class="error-message"></span>
                             </div>
-                            <input type="email" id="email"placeholder="user@email.com" maxlength="25">
+                            <input type="email" id="email" placeholder="user@email.com" maxlength="25">
                             <span id="emailError" class="error-message"></span>
                             
                             <input type="password" id="password" placeholder="password" maxlength="8">
@@ -95,59 +106,57 @@
                             <button type="submit" class="btn">Sign Up</button>
                         </form>
                         <p>Already have an account? <a href="login.html">Login</a></p>
-                       
+
                     </div>
                 </div>
             </div>
         </section>
     </main>
     <script>
+        function validateForm(event) {
+            event.preventDefault();
+            let isValid = true;
 
-  function validateForm(event) {
-    event.preventDefault();
-    let isValid = true;
+            let firstName = document.getElementById("firstName").value.trim();
+            let lastName = document.getElementById("lastName").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let password = document.getElementById("password").value;
+            let rePassword = document.getElementById("rePassword").value;
 
-    let firstName = document.getElementById("firstName").value.trim();
-    let lastName = document.getElementById("lastName").value.trim();
-    let email = document.getElementById("email").value.trim();
-    let password = document.getElementById("password").value;
-    let rePassword = document.getElementById("rePassword").value;
-
-    document.getElementById("firstNameError").textContent = "";
-   document.getElementById("lastNameError").textContent = "";
-   document.getElementById("emailError").textContent = "";
-   document.getElementById("passwordError").textContent = "";
-   document.getElementById("rePasswordError").textContent = "";
-
+            document.getElementById("firstNameError").textContent = "";
+            document.getElementById("lastNameError").textContent = "";
+            document.getElementById("emailError").textContent = "";
+            document.getElementById("passwordError").textContent = "";
+            document.getElementById("rePasswordError").textContent = "";
 
 
 
-    if (firstName === "") {
 
-       document.getElementById("firstNameError").textContent = "Please enter your first name";
-    isValid = false;
-  }
+            if (firstName === "") {
 
-  
-    if (lastName === "") {
-        document.getElementById("lastNameError").textContent = "Please enter your last name";
-    isValid = false;
-  }
+                document.getElementById("firstNameError").textContent = "Please enter your first name";
+                isValid = false;
+            }
 
-    if (email === "") {
-        document.getElementById("emailError").textContent = "Please enter your email";}
-    
 
-    if (password.length <5) {
-        document.getElementById("passwordError").textContent ="Password must be at least 5 characters";
-    isValid = false;
-  }
+            if (lastName === "") {
+                document.getElementById("lastNameError").textContent = "Please enter your last name";
+                isValid = false;
+            }
 
-  
-    if (password !== rePassword) {
-        document.getElementById("rePasswordError").textContent = "Passwords do not match";
-    isValid = false;
-    }
+            if (email === "") {
+                document.getElementById("emailError").textContent = "Please enter your email";
+            }
+
+            if (password.length < 5) {
+                document.getElementById("passwordError").textContent = "Password must be at least 5 characters";
+                isValid = false;
+            }
+
+
+            if (password !== rePassword) {
+                document.getElementById("rePasswordError").textContent = "Passwords do not match";
+                isValid = false;}
 
     if (isValid) {
        
@@ -169,7 +178,6 @@
   } 
 }
 </script>
-
 
 </body>
 

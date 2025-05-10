@@ -10,14 +10,19 @@
     <!--Font Family-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inder&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inder&display=swap"
+        rel="stylesheet">
     <!--Font Awsome library-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mystery+Quest&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mystery+Quest&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -32,17 +37,18 @@
     <div class="item-page">
         <!-- Left part -->
         <div class="left-page">
-            <img src="d:\FCAI\Coffee_Project\IT_Coffee_Project\Index\image\capsule.png" alt="">
+            <img src="d:\FCAI\Coffee_Project\IT_Coffee_Project\trial\media\coffe_roasted_.png" alt="">
             <span></span>
         </div>
         <!-- Right part -->
         <div class="right-page">
             <div class="contant">
                 <a class="icon-cart" href="cart.html" target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>
-                <h1>Espresso Capsules</h1>
+                <h1>Roasted Coffee</h1>
                 <span class="span-name"></span>
                 <p class="para">
-                    Roasted Coffee<br> Expertly roasted beans with bold aroma and deep flavor.<br> Perfect for brewing a fresh, energizing cup every time.
+                    <br> Expertly roasted beans with bold aroma and deep flavor.<br> Perfect for brewing a
+                    fresh, energizing cup every time.
                 </p>
                 <div class="price-count">
                     <div class="icon-price"><i class="fa-solid fa-money-check-dollar"></i></div>
@@ -103,14 +109,14 @@
 
         // Increase quantity
         const inc = document.getElementById("increase");
-        inc.addEventListener("click", function() {
+        inc.addEventListener("click", function () {
             quantity++;
             quantityDisplay.innerHTML = quantity;
         });
 
         // Decrease quantity
         const dec = document.getElementById("decrease");
-        dec.addEventListener("click", function() {
+        dec.addEventListener("click", function () {
             if (quantity > 1) {
                 quantity--;
                 quantityDisplay.innerHTML = quantity;
@@ -118,7 +124,7 @@
         });
 
         // Add to Cart functionality
-        document.getElementById("addToCart").addEventListener("click", function() {
+        document.getElementById("addToCart").addEventListener("click", function () {
             let cartData = localStorage.getItem("cart");
             let cart = [];
             if (cartData) {

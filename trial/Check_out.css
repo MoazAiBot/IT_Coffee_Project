@@ -44,7 +44,7 @@ h1 {
     font-size: 45px;
 }
 
-#in1 {
+#firstname {
     width: 300px;
     height: 20px;
     font-size: 18px;
@@ -59,12 +59,12 @@ h1 {
     transform: translate(240px, 125px);
 }
 
-#in1::placeholder {
+#firstname::placeholder {
     color: black;
     opacity: 47%;
 }
 
-#in2 {
+#lastname {
     width: 300px;
     height: 20px;
     font-size: 18px;
@@ -79,12 +79,12 @@ h1 {
     transform: translate(240px, 155px);
 }
 
-#in2::placeholder {
+#lastname::placeholder {
     color: black;
     opacity: 47%;
 }
 
-#in3 {
+#phone {
     width: 300px;
     height: 20px;
     font-size: 18px;
@@ -99,12 +99,12 @@ h1 {
     transform: translate(240px, 185px);
 }
 
-#in3::placeholder {
+#phone::placeholder {
     color: black;
     opacity: 47%;
 }
 
-#in4 {
+#address {
     width: 300px;
     height: 20px;
     font-size: 18px;
@@ -119,12 +119,12 @@ h1 {
     transform: translate(240px, 215px);
 }
 
-#in4::placeholder {
+#address::placeholder {
     color: black;
     opacity: 47%;
 }
 
-#in5 {
+#card {
     width: 300px;
     height: 20px;
     font-size: 18px;
@@ -139,12 +139,12 @@ h1 {
     transform: translate(650px, -5px);
 }
 
-#in5::placeholder {
+#card::placeholder {
     color: black;
     opacity: 47%;
 }
 
-#in6 {
+#date {
     width: 300px;
     height: 20px;
     font-size: 18px;
@@ -159,12 +159,12 @@ h1 {
     transform: translate(977px, 25px);
 }
 
-#in6::placeholder {
+#date::placeholder {
     color: black;
     opacity: 47%;
 }
 
-#in7 {
+#cvv {
     width: 300px;
     height: 20px;
     font-size: 18px;
@@ -179,7 +179,7 @@ h1 {
     transform: translate(977px, 55px);
 }
 
-#in7::placeholder {
+#cvv::placeholder {
     color: black;
     opacity: 47%;
 }
