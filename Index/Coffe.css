@@ -503,8 +503,6 @@ header .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--best-sales-title);
-    background-color: var();
     gap: 200px;
     margin: 0 80px 80px 80px;
     animation: apear linear;
@@ -516,8 +514,8 @@ header .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--primary-color);
-    color: var(--navbar-color);
+    background-color: var(--best-sales-title);
+    color: var(--primary-color);
     margin-bottom: 100px;
     letter-spacing: 10px;
     transition: .3s ease;
@@ -532,7 +530,7 @@ header .navbar {
     justify-content: center;
     align-items: center;
     padding: 50px;
-    background-color: var(--primary-color);
+    background-color: var(--best-sales-title);
     width: 600px;
     height: 100px;
     gap: 20px;
@@ -551,14 +549,14 @@ header .navbar {
 }
 
 .Advantages .card-advg i {
-    color: var(--navbar-color);
+    color: var(--primary-color);
     scale: 3;
     width: 30px;
 }
 
 .Advantages .card-advg p {
     width: 80%;
-    color: var(--navbar-color);
+    color: var(--primary-color);
     font-weight: 900;
     font-size: large;
 }
