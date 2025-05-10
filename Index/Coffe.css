@@ -16,8 +16,9 @@
     --video-border: rgb(112, 40, 22);
     /*Best-sales*/
     --best-sales-color: white;
+    --best-sales-title: rgb(83, 29, 16);
     /*About-Section*/
-    --about-back: rgb(112, 40, 22);
+    --about-back: rgb(60, 18, 8);
     --about-text: white;
 }
 
@@ -35,6 +36,7 @@
     --video-border: rgb(184, 106, 58);
     /*Best Sales*/
     --best-sales-color: rgb(87, 32, 19);
+    --best-sales-title: rgb(240, 195, 142);
     /* about-section*/
     --about-back: rgb(60, 18, 8);
     --about-text: white;
@@ -356,7 +358,7 @@ header .navbar {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 70px;
-    color: var(--background-colour);
+    color: var(--best-sales-title);
     font-weight: 900;
     font-size: xx-large;
     padding: 20px 30px;
