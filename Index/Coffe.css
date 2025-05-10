@@ -36,6 +36,10 @@
     --about-text: white;
 }
 
+body {
+    background-color: var(--primary-color);
+}
+
 #scrollToTopBtn {
     display: none;
     position: fixed;
