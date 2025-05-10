@@ -3,6 +3,8 @@
 /*Styling for Whole Site*/
 
 :root {
+    /*body*/
+    --body-color: white;
     --primary-color: rgb(83, 29, 16);
     --hover-color: rgb(184, 106, 58);
     --background-colour: rgb(222, 198, 170);
@@ -20,6 +22,8 @@
 }
 
 .darkmode {
+    /*Body*/
+    --body-color: rgb(60, 18, 8);
     --navbar-color: rgb(240, 195, 142);
     --primary-color: rgb(60, 18, 8);
     --hover-color: rgb(255, 255, 255);
@@ -37,7 +41,7 @@
 }
 
 body {
-    background-color: var(--primary-color);
+    background-color: var(--body-color);
 }
 
 #scrollToTopBtn {
