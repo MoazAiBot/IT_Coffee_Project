@@ -385,7 +385,6 @@ header .navbar {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .card-list .card-item .pro-img {
@@ -407,10 +406,12 @@ header .navbar {
 
 .card-list .card-item .pro-name {
     margin-bottom: 30px;
+    color: var(--best-sales-title);
 }
 
 .card-list .card-item .pro-details {
     margin-bottom: 20px;
+    color: var(--best-sales-title);
 }
 
 .card-list .card-item .buy-button {
@@ -433,6 +434,7 @@ header .navbar {
 
 .pro-price {
     text-decoration: underline;
+    color: var(--best-sales-title);
 }
 
 .linkbestsales {
