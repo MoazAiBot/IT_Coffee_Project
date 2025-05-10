@@ -21,14 +21,17 @@
         Check-Out
     </h1>
 
-    <input type="text" id="in1" placeholder="First Name"><br>
-    <input type="text" id="in2" placeholder="Last Name"><br>
-    <input type="text" id="in3" placeholder="Phone Number"><br>
-    <input type="text" id="in4" placeholder="Address">
-    <input type="text" id="in5" placeholder="Card Number"><br>
-    <input type="text" id="in6" placeholder="Expiry Date"><br>
-    <input type="text" id="in7" placeholder="CVV"><br>
-    <button onclick="pay_now()" id="button">Pay Now</button>
+    <form onsubmit="return name_valid();">
+        <input type="text" id="firstname" placeholder="First Name"><br>
+        <input type="text" id="lastname" placeholder="Last Name"><br>
+        <input type="text" id="phone" placeholder="Phone Number"><br>
+        <input type="text" id="address" placeholder="Address">
+        <input type="text" id="card" placeholder="Card Number"><br>
+        <input type="text" id="date" placeholder="Expiry Date"><br>
+        <input type="text" id="cvv" placeholder="CVV"><br>
+        <input id="button" type="submit" value="Pay Now">
+    </form>
+
     <hr>
     <h2>
         Total&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;49.96$<br>
