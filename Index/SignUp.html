@@ -83,29 +83,29 @@
                         <h2>Sign Up</h2>
 
                         <form action="#" onsubmit="return validateForm(event)" method="get">
-                        <form action="#" onsubmit="return validateForm(event)" method="post">
+                            <form action="#" onsubmit="return validateForm(event)" method="post">
 
 
-                            <div class="name-row">
-                                <input type="text" id="firstName" placeholder="First Name" maxlength="11">
-                                <span id="firstNameError" class="error-message"></span>
+                                <div class="name-row">
+                                    <input type="text" id="firstName" placeholder="First Name" maxlength="11">
+                                    <span id="firstNameError" class="error-message"></span>
 
-                                <input type="text" id="lastName" placeholder="Last Name " maxlength="11">
-                                <span id="lastNameError" class="error-message"></span>
-                            </div>
-                            <input type="email" id="email" placeholder="user@email.com" maxlength="25">
-                            <span id="emailError" class="error-message"></span>
-                            
-                            <input type="password" id="password" placeholder="password" maxlength="8">
-                            <span id="passwordError" class="error-message"></span>
-                            
+                                    <input type="text" id="lastName" placeholder="Last Name " maxlength="11">
+                                    <span id="lastNameError" class="error-message"></span>
+                                </div>
+                                <input type="email" id="email" placeholder="user@email.com" maxlength="25">
+                                <span id="emailError" class="error-message"></span>
 
-                            <input type="password" id="rePassword" placeholder="Re-enter password" maxlength="8">
-                            <span id="rePasswordError" class="error-message"></span>
+                                <input type="password" id="password" placeholder="password" maxlength="8">
+                                <span id="passwordError" class="error-message"></span>
 
-                            <button type="submit" class="btn">Sign Up</button>
-                        </form>
-                        <p>Already have an account? <a href="login.html">Login</a></p>
+
+                                <input type="password" id="rePassword" placeholder="Re-enter password" maxlength="8">
+                                <span id="rePasswordError" class="error-message"></span>
+
+                                <button type="submit" class="btn">Sign Up</button>
+                            </form>
+                            <p>Already have an account? <a href="login.html">Login</a></p>
 
                     </div>
                 </div>
@@ -156,28 +156,29 @@
 
             if (password !== rePassword) {
                 document.getElementById("rePasswordError").textContent = "Passwords do not match";
-                isValid = false;}
+                isValid = false;
+            }
 
-    if (isValid) {
-       
-        alert("Form submitted successfully!");
-        
-      
-        document.getElementById("firstName").value = "";
-        document.getElementById("lastName").value = "";
-        document.getElementById("email").value = "";
-        document.getElementById("password").value = "";
-        document.getElementById("rePassword").value = "";
+            if (isValid) {
+
+                alert("Form submitted successfully!");
 
 
-        setTimeout(function () {
-      window.location.href = "coffee.html";
-    }, 1000);
- 
-    return isValid;
-  } 
-}
-</script>
+                document.getElementById("firstName").value = "";
+                document.getElementById("lastName").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("password").value = "";
+                document.getElementById("rePassword").value = "";
+
+
+                setTimeout(function () {
+                    window.location.href = "d:\\FCAI\\Coffee_Project\\IT_Coffee_Project\\trial\\shop.html";
+                }, 500);
+
+                return isValid;
+            }
+        }
+    </script>
 
 </body>
 
