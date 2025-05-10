@@ -286,3 +286,7 @@ p a {
 p a:hover {
     color: #3c0f0f;
 }
+.error-message {
+    color: red;
+    font-size: 13px;
+  }

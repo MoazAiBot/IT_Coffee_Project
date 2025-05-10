@@ -106,51 +106,32 @@
     </div>
 
     <script>
-      // Global variable for quantity (like a static variable in C)
-      var quantity = 1;
-
-      // Main function (like main() in C)
-      function main() {
-        // Get quantity display element (like getting a pointer)
-        var quantityDisplay = document.querySelector("#quantity");
-
-        // Set up event listeners (like registering callbacks)
-        setupIncreaseButton(quantityDisplay);
-        setupDecreaseButton(quantityDisplay);
-        setupAddToCartButton();
-      }
-
-      // Function to handle increasing quantity
-      function setupIncreaseButton(displayElement) {
-        var button = document.getElementById("increase");
-        button.addEventListener("click", function () {
-          quantity = quantity + 1; // Increment like in C
-          displayElement.textContent = quantity;
+     let quantity = 1;
+        const quantityDisplay = document.getElementById("quantity");
+    
+        // Increase quantity
+        const inc = document.getElementById("increase");
+      inc .addEventListener("click", function() {
+            quantity++;
+            quantityDisplay.innerHTML = quantity;
         });
-      }
-
-      // Function to handle decreasing quantity
-      function setupDecreaseButton(displayElement) {
-        var button = document.getElementById("decrease");
-        button.addEventListener("click", function () {
-          // Only decrease if quantity > 1 (like a simple if condition in C)
-          if (quantity > 1) {
-            quantity = quantity - 1; // Decrement like in C
-            displayElement.textContent = quantity;
-          }
+    
+        // Decrease quantity
+        const dec=document.getElementById("decrease");
+        dec.addEventListener("click", function() {
+            if (quantity > 1) {
+                quantity--;
+                quantityDisplay.innerHTML = quantity;
+            }
         });
-      }
-
-      // Function to handle adding to cart
-      function setupAddToCartButton() {
-        var button = document.getElementById("addToCart");
-        button.addEventListener("click", function () {
-          // Get cart from storage (like reading a file in C)
-          var cartJson = localStorage.getItem("cart");
-          var cart = [];
-          if (cartJson) {
-            cart = JSON.parse(cartJson);
-          }
+    
+        // Add to Cart functionality
+        document.getElementById("addToCart").addEventListener("click", function() {
+            let cartData=localStorage.getItem("cart");
+            let cart=[];
+            if(cartData){
+                cart=JSON.parse(cartData);
+            }
 
           // Create new item (like creating a struct in C)
           var newItem = {
@@ -161,45 +142,33 @@
             image: "media/cuppchino.png",
           };
 
-          // Check if item exists (like searching an array in C)
-          var itemExists = false;
-          var existingIndex = -1;
-
-          for (var i = 0; i < cart.length; i++) {
-            if (cart[i].id === newItem.id) {
-              itemExists = true;
-              existingIndex = i;
-              break; // Exit loop early when found
+         // Check if item already in cart
+            let found=false;
+           for(let i=0;i<cart.length;i++){
+            if(cart[i].id===newItem.id){
+                cart[i].quantity+=newItem.quantity;
+                found=true;
+                break;
             }
-          }
+           }
+           if(!found){
+            cart.push(newItem);
+           }
+           
+            localStorage.setItem("cart", JSON.stringify(cart));
 
-          // Update or add item (like modifying an array in C)
-          if (itemExists) {
-            cart[existingIndex].quantity =
-              cart[existingIndex].quantity + quantity;
-          } else {
-            cart.push(newItem); // Like adding to an array in C
-          }
-
-          // Save back to storage (like writing to a file in C)
-          localStorage.setItem("cart", JSON.stringify(cart));
-
-          // Show success message (like printf in C)
-          Swal.fire({
-            position: "center",
-            icon: "success",
-            title: "Item added to the cart",
-            showConfirmButton: false,
-            timer: 1500,
-            background: "#cfb277",
-            color: "black",
-            iconColor: "#701e1e",
-          });
+            //success popup
+            Swal.fire({
+                position: "center",
+                icon: "success",
+                title: "Item added to the cart",
+                showConfirmButton: false,
+                timer: 1500,
+                background: "#cfb277",         
+                color: "black",              
+                iconColor: "#701e1e",
+            });
         });
-      }
-
-      // Start the program when page loads (like main() in C)
-      document.addEventListener("DOMContentLoaded", main);
     </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
