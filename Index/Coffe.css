@@ -3,25 +3,6 @@
 /*Styling for Whole Site*/
 
 :root {
-    /*Body*/
-    --body-color: rgb(60, 18, 8);
-    --navbar-color: rgb(240, 195, 142);
-    --primary-color: rgb(60, 18, 8);
-    --hover-color: rgb(255, 255, 255);
-    --background-colour: rgb(60, 18, 8);
-    /*Hero-Section*/
-    --title-color: orange;
-    --subtitle-color: rgb(184, 106, 58);
-    --description-color: rgb(240, 195, 142);
-    --video-border: rgb(184, 106, 58);
-    /*Best Sales*/
-    --best-sales-color: rgb(87, 32, 19);
-    /* about-section*/
-    --about-back: rgb(60, 18, 8);
-    --about-text: white;
-}
-
-.darkmode {
     /*body*/
     --body-color: white;
     --primary-color: rgb(83, 29, 16);
@@ -37,6 +18,25 @@
     --best-sales-color: white;
     /*About-Section*/
     --about-back: rgb(112, 40, 22);
+    --about-text: white;
+}
+
+.darkmode {
+    /*Body*/
+    --body-color: rgb(60, 18, 8);
+    --navbar-color: rgb(240, 195, 142);
+    --primary-color: rgb(60, 18, 8);
+    --hover-color: rgb(255, 255, 255);
+    --background-colour: rgb(60, 18, 8);
+    /*Hero-Section*/
+    --title-color: orange;
+    --subtitle-color: rgb(184, 106, 58);
+    --description-color: rgb(240, 195, 142);
+    --video-border: rgb(184, 106, 58);
+    /*Best Sales*/
+    --best-sales-color: rgb(87, 32, 19);
+    /* about-section*/
+    --about-back: rgb(60, 18, 8);
     --about-text: white;
 }
 
