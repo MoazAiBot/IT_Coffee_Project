@@ -301,9 +301,11 @@ header .navbar {
     0% {
         background-color: bisque;
     }
+
     50% {
         background-color: rgb(227, 174, 114);
     }
+
     100% {
         background-color: bisque;
     }
@@ -343,6 +345,7 @@ header .navbar {
         opacity: 0;
         scale: .5;
     }
+
     to {
         opacity: 1;
         scale: 1;
@@ -356,11 +359,12 @@ header .navbar {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 70px;
-    color: var(--background-colour);
+    color: var();
     font-weight: 900;
     font-size: xx-large;
     padding: 20px 30px;
     text-decoration: underline;
+    color: rgb(222, 198, 170);
 }
 
 .container {
@@ -383,7 +387,7 @@ header .navbar {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.5);
+
 }
 
 .card-list .card-item .pro-img {
@@ -405,10 +409,12 @@ header .navbar {
 
 .card-list .card-item .pro-name {
     margin-bottom: 30px;
+    color: rgb(222, 198, 170);
 }
 
 .card-list .card-item .pro-details {
     margin-bottom: 20px;
+    color: rgb(222, 198, 170);
 }
 
 .card-list .card-item .buy-button {
@@ -419,7 +425,7 @@ header .navbar {
     border: 10px solid var(--background-colour);
     margin-top: 30px;
     cursor: pointer;
-    background-color: var(--background-colour);
+    background-color: rgb(112, 40, 22);
     color: var(--title-color);
     transition: .3s ease;
 }
@@ -431,6 +437,7 @@ header .navbar {
 
 .pro-price {
     text-decoration: underline;
+    color: rgb(222, 198, 170);
 }
 
 .linkbestsales {
@@ -590,6 +597,7 @@ header .navbar {
         opacity: 0;
         scale: .5;
     }
+
     to {
         opacity: 1;
         scale: .7;
