@@ -17,6 +17,9 @@
     /*Best-sales*/
     --best-sales-color: white;
     --best-sales-title: rgb(83, 29, 16);
+    /*ADVG*/
+    --advg-title: rgb(240, 195, 142);
+    --advg-card: rgb(87, 32, 19);
     /*About-Section*/
     --about-back: rgb(60, 18, 8);
     --about-text: white;
@@ -37,6 +40,9 @@
     /*Best Sales*/
     --best-sales-color: rgb(87, 32, 19);
     --best-sales-title: rgb(240, 195, 142);
+    /*ADVG*/
+    --advg-title: rgb(87, 32, 19);
+    --advg-card: rgb(240, 195, 142);
     /* about-section*/
     --about-back: rgb(60, 18, 8);
     --about-text: white;
@@ -419,12 +425,12 @@ header .navbar {
     border-radius: 10px;
     font-weight: 900;
     font-size: xx-large;
-    border: 10px solid var(--background-colour);
+    border: 10px solid var(--advg-card);
     border-radius: 20px;
     margin-top: 30px;
     cursor: pointer;
     background-color: var(--best-sales-title);
-    color: var(--title-color);
+    color: var(--advg-title);
     transition: .3s ease;
 }
 
@@ -439,7 +445,7 @@ header .navbar {
 }
 
 .linkbestsales {
-    color: var(--title-color);
+    color: var(--advg-title);
 }
 
 
@@ -448,7 +454,7 @@ header .navbar {
 .our-customars .rate-title {
     margin-top: 100px;
     text-align: center;
-    color: var(--best-sales-title);
+    color: var(--advg-card);
     font-size: xx-large;
     font-weight: bolder;
     text-decoration: underline;
@@ -480,7 +486,7 @@ header .navbar {
     scale: 1.6;
     height: fit-content;
     background-color: orange;
-    border: 3px solid var(--primary-color);
+    border: 3px solid var(--advg-card);
     border-radius: 10px;
     transition: all 300ms ease-in-out;
 }
@@ -514,8 +520,8 @@ header .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--best-sales-title);
-    color: var(--primary-color);
+    background-color: var(--advg-card);
+    color: var(--advg-title);
     margin-bottom: 100px;
     letter-spacing: 10px;
     transition: .3s ease;
@@ -530,7 +536,7 @@ header .navbar {
     justify-content: center;
     align-items: center;
     padding: 50px;
-    background-color: var(--best-sales-title);
+    background-color: var(--advg-card);
     width: 600px;
     height: 100px;
     gap: 20px;
@@ -549,14 +555,14 @@ header .navbar {
 }
 
 .Advantages .card-advg i {
-    color: var(--primary-color);
+    color: var(--advg-title);
     scale: 3;
     width: 30px;
 }
 
 .Advantages .card-advg p {
     width: 80%;
-    color: var(--primary-color);
+    color: var(--advg-title);
     font-weight: 900;
     font-size: large;
 }
