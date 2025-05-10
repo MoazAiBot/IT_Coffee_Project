@@ -628,7 +628,7 @@ header .navbar {
     width: 10%;
     display: flex;
     justify-content: end;
-    background-color: var(--primary-color);
+    background-color: var(--advg-card);
     border-top-left-radius: 50rem;
     border-bottom-left-radius: 50rem;
     transition: .3s ease;
@@ -644,7 +644,7 @@ header .navbar {
 
 .place-container .side-place-title h2 {
     text-align: center;
-    color: var(--navbar-color);
+    color: var(--advg-title);
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg);
