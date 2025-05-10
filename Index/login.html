@@ -72,8 +72,8 @@
                         <i class='bx bxs-user login-icon' class="login-icon"></i>
                         <h2 class="login-title">Login</h2>
 
-                        <form action="file:///D:/FCAI/Coffee_Project/IT_Coffee_Project/trial/shop.html" required
-                            method="get">
+                        <form id="myForm" action="file:///D:/FCAI/Coffee_Project/IT_Coffee_Project/trial/shop.html"
+                            required method="get">
                             <input type="text" name="username" placeholder="Username" maxlength="11" required autofocus>
                             <input id="email" type="text" name="email" placeholder="user@email.com" required
                                 maxlength="25">
@@ -109,12 +109,16 @@
                 errorSpan.textContent = ""; // Clear error
                 alert("Email is valid! ✅");
                 window.location.href = "d:\\FCAI\\Coffee_Project\\IT_Coffee_Project\\trial\\shop.html";
+
                 // You can submit the form here if needed
                 // this.submit();
             } else {
                 errorSpan.textContent = "Please enter a valid email address.";
             }
-        });
+
+
+        }
+        );
     </script>
 
 </body>
